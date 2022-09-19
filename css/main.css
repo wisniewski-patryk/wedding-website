@@ -10,9 +10,58 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  background-color: black;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
+}
+
+nav ul {
+  padding-top: 50px;
+  position: absolute;
+  height: 100vh;
+  width: 300px;
+  left: -300px;
+  list-style: none;
+  background-color: rgb(255, 255, 255);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+nav a {
+  display: block;
+  padding: 10px 30px;
+  color: #333;
+  text-decoration: none;
+}
+nav a:hover {
+  font-weight: bold;
+}
+
+.burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  font-size: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.active {
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+}
+
+.hide {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
