@@ -1,3 +1,9 @@
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
 *,
 *::before,
 *::after {
@@ -10,7 +16,8 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  background-color: black;
+  background-color: #fca7ba;
+  height: 200vh;
 }
 
 body {
@@ -18,50 +25,152 @@ body {
   font-size: 1.6rem;
 }
 
-nav ul {
-  padding-top: 50px;
+.burger-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 1em;
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  z-index: 1000;
+}
+.burger-btn:focus {
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+}
+.burger-btn:hover .burger-btn__bars::after,
+.burger-btn:hover .burger-btn__bars::before {
+  width: 100%;
+}
+.burger-btn__box {
+  position: relative;
+  width: 40px;
+  height: 30px;
+}
+.burger-btn__bars, .burger-btn__bars::after, .burger-btn__bars::before {
   position: absolute;
-  height: 100vh;
-  width: 300px;
-  left: -300px;
-  list-style: none;
-  background-color: rgb(255, 255, 255);
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
+  right: 0;
+  height: 3px;
+  content: "";
+  background-color: #fff;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
 }
-nav a {
-  display: block;
-  padding: 10px 30px;
-  color: #333;
-  text-decoration: none;
+.burger-btn__bars {
+  width: 100%;
 }
-nav a:hover {
-  font-weight: bold;
+.burger-btn__bars::after {
+  top: 13px;
+  width: 60%;
+}
+.burger-btn__bars::before {
+  top: 27px;
+  width: 30%;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 
-.burger {
+.nav {
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  background-image: linear-gradient(45deg, rgba(8, 255, 103, 0.75), rgba(57, 255, 8, 0.75));
+  z-index: 100;
+  -webkit-transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+.nav--active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.nav__item {
+  position: relative;
+  display: block;
+  margin: 0.5em 0;
+  padding: 0.5em 2em;
+  font-size: 2.8rem;
+  color: #fff;
+  text-decoration: none;
+}
+.nav__item::before {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 10px 20px;
-  font-size: 36px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #fff;
+  width: 3px;
+  height: 100%;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  background-color: #fff;
+  content: "";
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
-
-.active {
-  -webkit-transform: translateX(300px);
-          transform: translateX(300px);
+.nav__item:hover::before {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
 }
 
-.hide {
-  display: none;
+@-webkit-keyframes navItemsAnimation {
+  from {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes navItemsAnimation {
+  from {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+.nav-items-animation {
+  -webkit-animation: navItemsAnimation 1s both;
+          animation: navItemsAnimation 1s both;
+}
+
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+  background-color: #2e2e2e;
+}
+
+div.logo {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  z-index: 999;
+}
+
+@media (min-width: 992px) {
+  .burger-btn {
+    top: 50px;
+    right: 50px;
+  }
+  .nav__item {
+    font-size: 4.8rem;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,13 +1,30 @@
-const burgerBtn = document.querySelector('.burger')
-const barsIco = document.querySelector('.fa-bars')
-const xIco = document.querySelector('.fa-times')
-const nav = document.querySelector('nav ul')
+const nav = document.querySelector('.nav')
+const navBtn = document.querySelector('.burger-btn')
+const allNavItems = document.querySelectorAll('.nav__item')
+const navBtnBars = document.querySelector('.burger-btn__bars')
 
 const handleNav = () => {
-	nav.classList.toggle('active')
-	burgerBtn.classList.toggle('active')
-	barsIco.classList.toggle('hide')
-	xIco.classList.toggle('hide')
+	nav.classList.toggle('nav--active')
+
+	navBtnBars.classList.remove('black-bars-color')
+
+	allNavItems.forEach(item => {
+		item.addEventListener('click', () => {
+			nav.classList.remove('nav--active')
+		})
+	})
+
+	handleNavItemsAnimation()
 }
 
-burgerBtn.addEventListener('click', handleNav)
+const handleNavItemsAnimation = () => {
+	let delayTime = 0
+
+	allNavItems.forEach(item => {
+		item.classList.toggle('nav-items-animation')
+		item.style.animationDelay = '.' + delayTime + 's'
+		delayTime++
+	})
+}
+
+navBtn.addEventListener('click', handleNav)
