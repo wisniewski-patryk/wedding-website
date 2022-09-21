@@ -16,7 +16,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  background-color: #fca7ba;
+  background-color: #ffd6ff;
   height: 200vh;
 }
 
@@ -88,7 +88,7 @@ body {
   width: 100%;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  background-image: linear-gradient(45deg, rgba(8, 255, 103, 0.75), rgba(57, 255, 8, 0.75));
+  background-image: linear-gradient(45deg, rgba(187, 208, 255, 0.75), rgba(190, 187, 255, 0.75));
   z-index: 100;
   -webkit-transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
   transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
