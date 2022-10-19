@@ -163,11 +163,22 @@ body {
 .black-bars-color::before {
 	background-color: $dark;
 }
-div.logo {
-	position: fixed;
-	top: 20px;
-	left: 50px;
-	z-index: 999;
+
+.map {
+	&__box {
+		iframe {
+			width: 100%;
+			height: 450px;
+		}
+	}
+}
+
+.tittle {
+	margin: 1em 0 0.5em 0;
+}
+
+li {
+	list-style: none;
 }
 
 ////// MEDIA /////
@@ -176,6 +187,16 @@ div.logo {
 	.header {
 		&__heading {
 			font-size: 6rem;
+		}
+	}
+
+	.map {
+		&__box {
+			iframe {
+				border: 0;
+				width: 600px;
+				height: 450px;
+			}
 		}
 	}
 }
