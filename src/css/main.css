@@ -213,7 +213,7 @@ li {
   }
 }
 @media (min-width: 768px) {
-  .header img {
+  .header__img {
     height: 420px;
   }
   .map__box iframe {
