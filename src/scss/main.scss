@@ -137,6 +137,10 @@ body {
 	text-align: center;
 	color: $pure-white;
 
+	img {
+		height: 180px;
+	}
+
 	&__heading {
 		font-family: 'Dancing Script', cursive;
 		font-size: 3rem;
@@ -184,10 +188,18 @@ li {
 
 ////// MEDIA /////
 
-@media (min-width: 772px) {
+@media (min-width: 576px) {
 	.header {
-		&__heading {
-			font-size: 6rem;
+		img {
+			height: 300px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.header {
+		img {
+			height: 420px;
 		}
 	}
 
