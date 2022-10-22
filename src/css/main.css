@@ -162,7 +162,7 @@ body {
   height: 180px;
 }
 .header__heading {
-  font-family: "Dancing Script", cursive;
+  font-family: "Petit Formal Script";
   font-size: 3rem;
   font-weight: 300;
 }
@@ -202,7 +202,7 @@ body {
 }
 
 .tittle {
-  margin: 1em 0 0.5em 0;
+  margin: 0.5em 0 0.5em 0;
 }
 
 li {
@@ -256,4 +256,9 @@ li {
   .nav__item {
     font-size: 2.2rem;
   }
+.icons {
+  height: 64px;
+}
+
+
 }/*# sourceMappingURL=main.css.map */
