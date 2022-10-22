@@ -46,7 +46,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  background-color: #ffd6ff;
+  background-color: #FFD4E0;
   height: 200vh;
 }
 
@@ -67,7 +67,9 @@ body {
 }
 .burger-btn:focus {
   outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  /* border: 1px solid rgba(255, 255, 255, 0.5); */
+  border: 1px solid;
+  border-color: #BA6F84;
   border-radius: 8px;
 }
 .burger-btn:hover .burger-btn__bars::after,
@@ -84,7 +86,7 @@ body {
   right: 0;
   height: 3px;
   content: "";
-  background-color: #fff;
+  background-color: #BA6F84;
   transition: width 0.3s;
 }
 .burger-btn__bars {
@@ -125,7 +127,7 @@ body {
   margin: 0.5em 0;
   padding: 0.5em 2em;
   font-size: 2.8rem;
-  color: #fff;
+  color: #BA6F84;
   text-decoration: none;
 }
 .nav__item::before {
@@ -135,7 +137,7 @@ body {
   width: 100%;
   height: 100%;
   transform: scale(0);
-  border: 3px solid #fff;
+  border: 3px solid #BA6F84;
   border-radius: 8px;
   content: "";
   transition: transform 0.3s;
