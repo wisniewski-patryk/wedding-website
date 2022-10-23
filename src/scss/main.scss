@@ -1,4 +1,5 @@
 // font-family: 'Dancing Script', cursive;
+// font-family: 'Petit Formal Script', cursive;
 
 @import './colors';
 @import './components';
@@ -132,14 +133,11 @@ body {
 	align-items: center;
 	flex-direction: column;
 	padding: 2em;
-	height: 75vh;
-	width: 100%;
+	height: 100vh;
 	text-align: center;
 	color: $pure-white;
-
-	img {
-		height: 180px;
-	}
+	@include heroImages('../img/daniel-j-schwarz-YtY724tdl7Y-unsplash-croped.jpg');
+	background-attachment: scroll;
 
 	&__heading {
 		font-family: 'Dancing Script', cursive;
@@ -177,7 +175,6 @@ body {
 		}
 	}
 }
-
 
 .tittle {
 	margin: 1em 0 0.5em 0;

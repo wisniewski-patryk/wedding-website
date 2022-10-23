@@ -6,11 +6,10 @@
 
 .section-heading {
   position: relative;
-  font-family: cursive;
+  font-family: "Petit Formal Script", cursive;
   margin-bottom: 2em;
   font-size: 3rem;
   font-weight: 300;
-  text-transform: uppercase;
   text-align: center;
   letter-spacing: 2px;
 }
@@ -67,9 +66,7 @@ body {
 }
 .burger-btn:focus {
   outline: none;
-  /* border: 1px solid rgba(255, 255, 255, 0.5); */
-  border: 1px solid;
-  border-color: #BA6F84;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 8px;
 }
 .burger-btn:hover .burger-btn__bars::after,
@@ -153,16 +150,17 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 2em;
-  height: 75vh;
-  width: 100%;
+  height: 100vh;
   text-align: center;
-  color: #fff;
-}
-.header img {
-  height: 180px;
+  color: #BA6F84;
+  background-image: url("../img/daniel-j-schwarz-YtY724tdl7Y-unsplash-croped.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-attachment: scroll;
 }
 .header__heading {
-  font-family: "Petit Formal Script";
+  font-family: "Dancing Script", cursive;
   font-size: 3rem;
   font-weight: 300;
 }
@@ -202,7 +200,7 @@ body {
 }
 
 .tittle {
-  margin: 0.5em 0 0.5em 0;
+  margin: 1em 0 0.5em 0;
 }
 
 li {
@@ -256,9 +254,4 @@ li {
   .nav__item {
     font-size: 2.2rem;
   }
-.icons {
-  height: 64px;
-}
-
-
 }/*# sourceMappingURL=main.css.map */
