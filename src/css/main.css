@@ -193,6 +193,18 @@ body {
   background-color: #2e2e2e;
 }
 
+.info__box--icons {
+  height: 100px;
+  display: block;
+  margin: 20px auto;
+  padding: 20px 0 0 0;
+}
+
+.map__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .map__box iframe {
   border: 0;
   width: 100%;
@@ -200,7 +212,16 @@ body {
 }
 
 .tittle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 1em 0 0.5em 0;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 li {
