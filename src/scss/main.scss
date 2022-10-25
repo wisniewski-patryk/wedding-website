@@ -166,6 +166,50 @@ body {
 	background-color: $dark;
 }
 
+.counter {
+	&__app {
+		position: fixed;
+		top: 20px;
+		left: 0px;
+		&__body {
+			// font-family: 'Petit Formal Script', cursive;
+			display: flex;
+			flex-direction: column;
+			width: 250px;
+			height: 200px;
+			overflow: hidden;
+		}
+
+		.time__section {
+			display: flex;
+			flex-direction: column;
+			z-index: 100;
+
+			&--title {
+				text-align: center;
+				margin-bottom: 20px;
+				font-size: 2rem;
+			}
+
+			&__cards {
+				display: flex;
+				justify-content: space-evenly;
+				width: 100%;
+				.card {
+					display: flex;
+					flex-direction: column;
+					text-align: center;
+					.number {
+						margin-bottom: 10px;
+						font-weight: bold;
+						font-size: 28px;
+					}
+				}
+			}
+		}
+	}
+}
+
 .info {
 	&__box {
 		&--icons {
@@ -211,16 +255,58 @@ li {
 
 @media (min-width: 576px) {
 	.header {
+		&__heading {
+			font-size: 4rem;
+		}
 		img {
 			height: 300px;
+		}
+	}
+
+	.counter {
+		&__app {
+	
+			.time__section {
+
+				&--title {
+					font-size: 2.5rem;
+				}
+	
+				&__cards {
+					.card {
+						.number {
+							font-size: 3rem;
+						}
+					}
+				}
+			}
 		}
 	}
 }
 
 @media (min-width: 768px) {
 	.header {
+		&__heading {
+			font-size: 6rem;
+		}
 		&__img {
 			height: 420px;
+		}
+	}
+
+	.counter {
+		&__app {
+	
+			.time__section {
+	
+				&__cards {
+					.card {
+						.number {
+							font-size: 3rem;
+						}
+					}
+				}
+			}
 		}
 	}
 

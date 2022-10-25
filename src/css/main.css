@@ -193,6 +193,44 @@ body {
   background-color: #2e2e2e;
 }
 
+.counter__app {
+  position: fixed;
+  top: 20px;
+  left: 0px;
+}
+.counter__app__body {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 200px;
+  overflow: hidden;
+}
+.counter__app .time__section {
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+.counter__app .time__section--title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+.counter__app .time__section__cards {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.counter__app .time__section__cards .card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.counter__app .time__section__cards .card .number {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 28px;
+}
+
 .info__box--icons {
   height: 100px;
   display: block;
@@ -230,13 +268,28 @@ li {
 }
 
 @media (min-width: 576px) {
+  .header__heading {
+    font-size: 4rem;
+  }
   .header img {
     height: 300px;
   }
+  .counter__app .time__section--title {
+    font-size: 2.5rem;
+  }
+  .counter__app .time__section__cards .card .number {
+    font-size: 3rem;
+  }
 }
 @media (min-width: 768px) {
+  .header__heading {
+    font-size: 6rem;
+  }
   .header__img {
     height: 420px;
+  }
+  .counter__app .time__section__cards .card .number {
+    font-size: 3rem;
   }
   .map__box iframe {
     width: 600px;
