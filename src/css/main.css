@@ -231,7 +231,31 @@ body {
   font-size: 28px;
 }
 
+.info {
+  display: none;
+}
 .info__box--icons {
+  height: 100px;
+  display: block;
+  margin: 20px auto;
+  padding: 20px 0 0 0;
+}
+
+.plan__box--icons {
+  height: 100px;
+  display: block;
+  margin: 20px auto;
+  padding: 20px 0 0 0;
+}
+
+.menu__box--icons {
+  height: 100px;
+  display: block;
+  margin: 20px auto;
+  padding: 20px 0 0 0;
+}
+
+.photos__box--icons {
   height: 100px;
   display: block;
   margin: 20px auto;

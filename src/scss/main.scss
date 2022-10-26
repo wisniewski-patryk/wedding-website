@@ -211,6 +211,44 @@ body {
 }
 
 .info {
+	// visibility: hidden;
+	display: none;
+	&__box {
+		&--icons {
+			height: 100px;
+			display: block;
+			margin: 20px auto;
+			padding: 20px 0 0 0;
+		}
+	}
+}
+.plan {
+	// visibility: hidden;
+	// display: none;
+	&__box {
+		&--icons {
+			height: 100px;
+			display: block;
+			margin: 20px auto;
+			padding: 20px 0 0 0;
+		}
+	}
+}
+.menu {
+	// visibility: hidden;
+	// display: none;
+	&__box {
+		&--icons {
+			height: 100px;
+			display: block;
+			margin: 20px auto;
+			padding: 20px 0 0 0;
+		}
+	}
+}
+.photos {
+	// visibility: hidden;
+	// display: none;
 	&__box {
 		&--icons {
 			height: 100px;
