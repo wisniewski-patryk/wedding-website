@@ -39,12 +39,10 @@ const setTime = () => {
 	const days = Math.floor(result / 1000 / 60 / 60 / 24)
 	const hours = Math.floor(result / 1000 / 60 / 60) % 24
 	const minutes = Math.floor(result / 1000 / 60) % 60
-	const seconds = Math.floor(result / 1000) % 60
 
 	daysCount.textContent = days
 	hoursCount.textContent = hours
 	minutesCount.textContent = minutes
-	secondsCount.textContent = seconds
 	
 }
 
