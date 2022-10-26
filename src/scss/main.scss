@@ -167,8 +167,8 @@ body {
 }
 
 .timer {
-	position: fixed;
-	top: 20px;
+	position: relative;
+	top: -98vh;
 	left: 0px;
 	&__body {
 		// font-family: 'Petit Formal Script', cursive;
