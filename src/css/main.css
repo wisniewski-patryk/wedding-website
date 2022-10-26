@@ -46,7 +46,7 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   background-color: #FFD4E0;
-  height: 200vh;
+  height: 100vh;
 }
 
 body {
@@ -231,9 +231,6 @@ body {
   font-size: 28px;
 }
 
-.info {
-  display: none;
-}
 .info__box--icons {
   height: 100px;
   display: block;
@@ -289,6 +286,10 @@ body {
 
 li {
   list-style: none;
+}
+
+.footer {
+  display: none;
 }
 
 @media (min-width: 576px) {

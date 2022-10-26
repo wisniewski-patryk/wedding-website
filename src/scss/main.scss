@@ -17,7 +17,7 @@ html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
 	background-color: $main-color;
-	height: 200vh;
+	height: 100vh;
 }
 
 body {
@@ -210,9 +210,13 @@ body {
 	}
 }
 
+.contact {
+	// display: none;
+}
+
 .info {
 	// visibility: hidden;
-	display: none;
+	// display: none;
 	&__box {
 		&--icons {
 			height: 100px;
@@ -260,6 +264,7 @@ body {
 }
 
 .map {
+	// display: none;
 	&__box {
 		display: flex;
 		justify-content: center;
@@ -287,6 +292,10 @@ body {
 
 li {
 	list-style: none;
+}
+
+.footer {
+	display: none;
 }
 
 ////// MEDIA /////
