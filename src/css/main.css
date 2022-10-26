@@ -193,39 +193,39 @@ body {
   background-color: #2e2e2e;
 }
 
-.counter__app {
+.timer {
   position: fixed;
   top: 20px;
   left: 0px;
 }
-.counter__app__body {
+.timer__body {
   display: flex;
   flex-direction: column;
   width: 250px;
   height: 200px;
   overflow: hidden;
 }
-.counter__app .time__section {
+.timer .time__section {
   display: flex;
   flex-direction: column;
   z-index: 100;
 }
-.counter__app .time__section--title {
+.timer .time__section--title {
   text-align: center;
   margin-bottom: 20px;
   font-size: 2rem;
 }
-.counter__app .time__section__cards {
+.timer .time__section__cards {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
 }
-.counter__app .time__section__cards .card {
+.timer .time__section__cards .card {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-.counter__app .time__section__cards .card .number {
+.timer .time__section__cards .card .number {
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 28px;

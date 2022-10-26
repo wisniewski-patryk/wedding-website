@@ -166,53 +166,51 @@ body {
 	background-color: $dark;
 }
 
-.counter {
-	&__app {
-		position: fixed;
-		top: 20px;
-		left: 0px;
-		&__body {
-			// font-family: 'Petit Formal Script', cursive;
-			display: flex;
-			flex-direction: column;
-			width: 250px;
-			height: 200px;
-			overflow: hidden;
+.timer {
+	position: fixed;
+	top: 20px;
+	left: 0px;
+	&__body {
+		// font-family: 'Petit Formal Script', cursive;
+		display: flex;
+		flex-direction: column;
+		width: 250px;
+		height: 200px;
+		overflow: hidden;
+	}
+
+	.time__section {
+		display: flex;
+		flex-direction: column;
+		z-index: 100;
+
+		&--title {
+			text-align: center;
+			margin-bottom: 20px;
+			font-size: 2rem;
 		}
 
-		.time__section {
+		&__cards {
 			display: flex;
-			flex-direction: column;
-			z-index: 100;
-
-			&--title {
-				text-align: center;
-				margin-bottom: 20px;
-				font-size: 2rem;
-			}
-
-			&__cards {
+			justify-content: space-evenly;
+			width: 100%;
+			.card {
 				display: flex;
-				justify-content: space-evenly;
-				width: 100%;
-				.card {
-					display: flex;
-					flex-direction: column;
-					text-align: center;
-					.number {
-						margin-bottom: 10px;
-						font-weight: bold;
-						font-size: 28px;
-					}
+				flex-direction: column;
+				text-align: center;
+				.number {
+					margin-bottom: 10px;
+					font-weight: bold;
+					font-size: 28px;
 				}
 			}
 		}
 	}
 }
 
-.contact {
-	// display: none;
-}
+// .contact {
+// 	// display: none;
+// }
 
 .info {
 	// visibility: hidden;
@@ -312,13 +310,11 @@ li {
 
 	.counter {
 		&__app {
-	
 			.time__section {
-
 				&--title {
 					font-size: 2.5rem;
 				}
-	
+
 				&__cards {
 					.card {
 						.number {
@@ -343,9 +339,7 @@ li {
 
 	.counter {
 		&__app {
-	
 			.time__section {
-	
 				&__cards {
 					.card {
 						.number {
