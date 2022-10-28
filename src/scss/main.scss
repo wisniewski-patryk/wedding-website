@@ -16,11 +16,11 @@
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
-	background-color: $main-color;
 	height: 100vh;
 }
 
 body {
+	@include heroImages('../img/daniel-j-schwarz-YtY724tdl7Y-unsplash-croped.jpg');
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.6rem;
 }
@@ -127,6 +127,9 @@ body {
 // HEADER
 
 .header {
+	&--disable {
+		display: none;
+	}
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -136,13 +139,54 @@ body {
 	height: 100vh;
 	text-align: center;
 	color: black;
-	@include heroImages('../img/daniel-j-schwarz-YtY724tdl7Y-unsplash-croped.jpg');
 	background-attachment: scroll;
 
 	&__heading {
 		font-family: 'Dancing Script', cursive;
 		font-size: 3rem;
 		font-weight: 300;
+	}
+
+	&__timer {
+		position: absolute;
+		top: 20px;
+		left: -30px;
+		&__body {
+			// font-family: 'Petit Formal Script', cursive;
+			display: flex;
+			flex-direction: column;
+			width: 350px;
+			height: 200px;
+			overflow: hidden;
+		}
+
+		.time__section {
+			display: flex;
+			flex-direction: column;
+			z-index: 100;
+
+			&--title {
+				text-align: center;
+				margin-bottom: 20px;
+				font-size: 2rem;
+			}
+
+			&__cards {
+				display: flex;
+				justify-content: space-evenly;
+				width: 100%;
+				.card {
+					display: flex;
+					flex-direction: column;
+					text-align: center;
+					.number {
+						margin-bottom: 10px;
+						font-weight: bold;
+						font-size: 28px;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -160,61 +204,16 @@ body {
 	animation: navItemsAnimation 1s both;
 }
 
-.black-bars-color,
-.black-bars-color::after,
-.black-bars-color::before {
-	background-color: $dark;
-}
-
-.timer {
-	position: relative;
-	top: -98vh;
-	left: 0px;
-	&__body {
-		// font-family: 'Petit Formal Script', cursive;
-		display: flex;
-		flex-direction: column;
-		width: 250px;
-		height: 200px;
-		overflow: hidden;
-	}
-
-	.time__section {
-		display: flex;
-		flex-direction: column;
-		z-index: 100;
-
-		&--title {
-			text-align: center;
-			margin-bottom: 20px;
-			font-size: 2rem;
-		}
-
-		&__cards {
-			display: flex;
-			justify-content: space-evenly;
-			width: 100%;
-			.card {
-				display: flex;
-				flex-direction: column;
-				text-align: center;
-				.number {
-					margin-bottom: 10px;
-					font-weight: bold;
-					font-size: 28px;
-				}
-			}
-		}
+.contact {
+	&--disable {
+		display: none;
 	}
 }
-
-// .contact {
-// 	// display: none;
-// }
 
 .info {
-	// visibility: hidden;
-	// display: none;
+	&--disable {
+		display: none;
+	}
 	&__box {
 		&--icons {
 			height: 100px;
@@ -225,8 +224,9 @@ body {
 	}
 }
 .plan {
-	// visibility: hidden;
-	// display: none;
+	&--disable {
+		display: none;
+	}
 	&__box {
 		&--icons {
 			height: 100px;
@@ -237,8 +237,9 @@ body {
 	}
 }
 .menu {
-	// visibility: hidden;
-	// display: none;
+	&--disable {
+		display: none;
+	}
 	&__box {
 		&--icons {
 			height: 100px;
@@ -249,8 +250,9 @@ body {
 	}
 }
 .photos {
-	// visibility: hidden;
-	// display: none;
+	&--disable {
+		display: none;
+	}
 	&__box {
 		&--icons {
 			height: 100px;
@@ -262,7 +264,9 @@ body {
 }
 
 .map {
-	// display: none;
+	&--disable {
+		display: none;
+	}
 	&__box {
 		display: flex;
 		justify-content: center;
@@ -401,5 +405,34 @@ li {
 		&__item {
 			font-size: 2.2rem;
 		}
+	}
+
+	.header {
+		&--disable {
+			display: none;
+		}
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding: 2em;
+		height: 100vh;
+		text-align: center;
+		color: black;
+		// @include heroImages('../img/daniel-j-schwarz-YtY724tdl7Y-unsplash-croped.jpg');
+		background-attachment: scroll;
+
+		&__heading {
+			font-family: 'Dancing Script', cursive;
+			font-size: 8rem;
+			font-weight: 300;
+		}
+
+		// &__timer {
+		// 	position: relative;
+		// 	top: -40vh;
+		// 	left: -85vh;
+		// }
 	}
 }

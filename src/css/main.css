@@ -45,11 +45,14 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  background-color: #FFD4E0;
   height: 100vh;
 }
 
 body {
+  background-image: url("../img/daniel-j-schwarz-YtY724tdl7Y-unsplash-croped.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
 }
@@ -153,16 +156,52 @@ body {
   height: 100vh;
   text-align: center;
   color: black;
-  background-image: url("../img/daniel-j-schwarz-YtY724tdl7Y-unsplash-croped.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   background-attachment: scroll;
+}
+.header--disable {
+  display: none;
 }
 .header__heading {
   font-family: "Dancing Script", cursive;
   font-size: 3rem;
   font-weight: 300;
+}
+.header__timer {
+  position: absolute;
+  top: 20px;
+  left: -30px;
+}
+.header__timer__body {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 200px;
+  overflow: hidden;
+}
+.header__timer .time__section {
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+.header__timer .time__section--title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+.header__timer .time__section__cards {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.header__timer .time__section__cards .card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.header__timer .time__section__cards .card .number {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 28px;
 }
 
 @-webkit-keyframes navItemsAnimation {
@@ -187,50 +226,13 @@ body {
           animation: navItemsAnimation 1s both;
 }
 
-.black-bars-color,
-.black-bars-color::after,
-.black-bars-color::before {
-  background-color: #2e2e2e;
+.contact--disable {
+  display: none;
 }
 
-.timer {
-  position: relative;
-  top: -98vh;
-  left: 0px;
+.info--disable {
+  display: none;
 }
-.timer__body {
-  display: flex;
-  flex-direction: column;
-  width: 250px;
-  height: 200px;
-  overflow: hidden;
-}
-.timer .time__section {
-  display: flex;
-  flex-direction: column;
-  z-index: 100;
-}
-.timer .time__section--title {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 2rem;
-}
-.timer .time__section__cards {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-}
-.timer .time__section__cards .card {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.timer .time__section__cards .card .number {
-  margin-bottom: 10px;
-  font-weight: bold;
-  font-size: 28px;
-}
-
 .info__box--icons {
   height: 100px;
   display: block;
@@ -238,6 +240,9 @@ body {
   padding: 20px 0 0 0;
 }
 
+.plan--disable {
+  display: none;
+}
 .plan__box--icons {
   height: 100px;
   display: block;
@@ -245,6 +250,9 @@ body {
   padding: 20px 0 0 0;
 }
 
+.menu--disable {
+  display: none;
+}
 .menu__box--icons {
   height: 100px;
   display: block;
@@ -252,6 +260,9 @@ body {
   padding: 20px 0 0 0;
 }
 
+.photos--disable {
+  display: none;
+}
 .photos__box--icons {
   height: 100px;
   display: block;
@@ -259,6 +270,9 @@ body {
   padding: 20px 0 0 0;
 }
 
+.map--disable {
+  display: none;
+}
 .map__box {
   display: flex;
   justify-content: center;
@@ -353,5 +367,25 @@ li {
 @media (min-width: 1200px) {
   .nav__item {
     font-size: 2.2rem;
+  }
+  .header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+    height: 100vh;
+    text-align: center;
+    color: black;
+    background-attachment: scroll;
+  }
+  .header--disable {
+    display: none;
+  }
+  .header__heading {
+    font-family: "Dancing Script", cursive;
+    font-size: 8rem;
+    font-weight: 300;
   }
 }/*# sourceMappingURL=main.css.map */
