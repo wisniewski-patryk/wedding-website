@@ -170,9 +170,10 @@ body {
   margin-top: 100px;
 }
 .header__timer__body {
+  font-family: "Petit Formal Script", cursive;
   display: flex;
   flex-direction: column;
-  width: 350px;
+  width: 100vw;
   height: 200px;
   overflow: hidden;
 }
@@ -315,6 +316,19 @@ li {
   .header img {
     height: 300px;
   }
+  .header__timer__body {
+    width: 100vw;
+    height: 250px;
+  }
+  .header__timer .time__section--title {
+    font-size: 5rem;
+  }
+  .header__timer .time__section__cards .card .number {
+    font-size: 5rem;
+  }
+  .header__timer .time__section__cards .card__title {
+    font-size: 4.5rem;
+  }
   .counter__app .time__section--title {
     font-size: 2.5rem;
   }
@@ -328,6 +342,19 @@ li {
   }
   .header__img {
     height: 420px;
+  }
+  .header__timer__body {
+    width: 70vw;
+    height: 250px;
+  }
+  .header__timer .time__section--title {
+    font-size: 5rem;
+  }
+  .header__timer .time__section__cards .card .number {
+    font-size: 5rem;
+  }
+  .header__timer .time__section__cards .card__title {
+    font-size: 4.5rem;
   }
   .counter__app .time__section__cards .card .number {
     font-size: 3rem;
@@ -391,12 +418,8 @@ li {
     font-weight: 300;
   }
   .header__timer__body {
-    font-family: "Petit Formal Script", cursive;
-    display: flex;
-    flex-direction: column;
-    width: 550px;
+    width: 50vw;
     height: 250px;
-    overflow: hidden;
   }
   .header__timer .time__section--title {
     font-size: 5rem;

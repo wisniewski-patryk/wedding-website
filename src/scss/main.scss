@@ -153,10 +153,10 @@ body {
 		// top: 20px;
 		// left: -30px;
 		&__body {
-			// font-family: 'Petit Formal Script', cursive;
+			font-family: 'Petit Formal Script', cursive;
 			display: flex;
 			flex-direction: column;
-			width: 350px;
+			width: 100vw;
 			height: 200px;
 			overflow: hidden;
 		}
@@ -315,6 +315,30 @@ li {
 		img {
 			height: 300px;
 		}
+		&__timer {
+			&__body {
+				width: 100vw;
+				height: 250px;
+			}
+	
+			.time__section {
+	
+				&--title {
+					font-size: 5rem;
+				}
+	
+				&__cards {
+					.card {
+						.number {
+							font-size: 5rem;
+						}
+						&__title {
+							font-size: 4.5rem;
+						}
+					}
+				}
+			}
+		}
 	}
 
 	.counter {
@@ -343,6 +367,30 @@ li {
 		}
 		&__img {
 			height: 420px;
+		}
+		&__timer {
+			&__body {
+				width: 70vw;
+				height: 250px;
+			}
+	
+			.time__section {
+	
+				&--title {
+					font-size: 5rem;
+				}
+	
+				&__cards {
+					.card {
+						.number {
+							font-size: 5rem;
+						}
+						&__title {
+							font-size: 4.5rem;
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -436,12 +484,8 @@ li {
 
 		&__timer {
 			&__body {
-				font-family: 'Petit Formal Script', cursive;
-				display: flex;
-				flex-direction: column;
-				width: 550px;
+				width: 50vw;
 				height: 250px;
-				overflow: hidden;
 			}
 	
 			.time__section {
