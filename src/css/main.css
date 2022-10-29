@@ -391,10 +391,11 @@ li {
     font-weight: 300;
   }
   .header__timer__body {
+    font-family: "Petit Formal Script", cursive;
     display: flex;
     flex-direction: column;
-    width: 450px;
-    height: 200px;
+    width: 550px;
+    height: 250px;
     overflow: hidden;
   }
   .header__timer .time__section--title {
