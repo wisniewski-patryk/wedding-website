@@ -167,9 +167,7 @@ body {
   font-weight: 300;
 }
 .header__timer {
-  position: absolute;
-  top: 20px;
-  left: -30px;
+  margin-top: 100px;
 }
 .header__timer__body {
   display: flex;
@@ -186,7 +184,7 @@ body {
 .header__timer .time__section--title {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .header__timer .time__section__cards {
   display: flex;
@@ -201,7 +199,11 @@ body {
 .header__timer .time__section__cards .card .number {
   margin-bottom: 10px;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 3.5rem;
+}
+.header__timer .time__section__cards .card__title {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 @-webkit-keyframes navItemsAnimation {
@@ -387,5 +389,21 @@ li {
     font-family: "Dancing Script", cursive;
     font-size: 8rem;
     font-weight: 300;
+  }
+  .header__timer__body {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 200px;
+    overflow: hidden;
+  }
+  .header__timer .time__section--title {
+    font-size: 5rem;
+  }
+  .header__timer .time__section__cards .card .number {
+    font-size: 5rem;
+  }
+  .header__timer .time__section__cards .card__title {
+    font-size: 4.5rem;
   }
 }/*# sourceMappingURL=main.css.map */
