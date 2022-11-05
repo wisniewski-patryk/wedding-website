@@ -2,35 +2,21 @@ const nav = document.querySelector('.nav')
 const navBtn = document.querySelector('.burger-btn')
 const allNavItems = document.querySelectorAll('.nav__item')
 const navBtnBars = document.querySelector('.burger-btn__bars')
-
 const daysCount = document.querySelector('.days__count')
 const hoursCount = document.querySelector('.hours__count')
 const minutesCount = document.querySelector('.minutes__count')
 const secondsCount = document.querySelector('.seconds__count')
-
-const header = document.querySelector('.header')
+const [header, info, contact, map, plan, menu, photos] = document.querySelectorAll(
+	'.header, .plan, .contact, .info, .map, .menu, .photos'
+)
 const headerBtn = document.querySelectorAll('.homeBtn')
-const info = document.querySelector('.info')
 const infoBtn = document.querySelectorAll('.QandABtn')
-const contact = document.querySelector('.contact')
-const map = document.querySelector('.map')
-const plan = document.querySelector('.plan')
 const planBtn = document.querySelectorAll('.planBtn')
-const menu = document.querySelector('.menu')
 const menuBtn = document.querySelectorAll('.menuBtn')
-const photos = document.querySelector('.photos')
 const photosBtn = document.querySelectorAll('.photosBtn')
 
 const handleNav = () => {
-	nav.classList.toggle('nav--active')
-
-	// navBtnBars.classList.remove('black-bars-color')
-
-	// allNavItems.forEach(item => {
-	// 	item.addEventListener('click', () => {
-	// 		nav.classList.remove('nav--active')
-	// 	})
-	// })
+	nav.classList.toggle('nav--disable')
 
 	handleNavItemsAnimation()
 }
@@ -63,62 +49,43 @@ const appUpdate = () => {
 	setTime()
 }
 
-const handleHome = () => {
-	header.classList.remove('header--disable')
-	info.classList.add('info--disable')
-	map.classList.add('map--disable')
-	contact.classList.add('contact--disable')
-	plan.classList.add('plan--disable')
-	menu.classList.add('menu--disable')
-	photos.classList.add('photos--disable')
-	nav.classList.remove('nav--active')
+const actions = {
+	home: {
+		removeClass: [header, nav],
+		addClass: [info, map, contact, plan, menu, photos],
+	},
+	info: {
+		removeClass: [info, map, contact, nav],
+		addClass: [header, plan, menu, photos],
+	},
+	plan: {
+		removeClass: [plan, nav],
+		addClass: [header, info, map, contact, menu, photos],
+	},
+	menu: {
+		removeClass: [menu, nav],
+		addClass: [header, info, map, contact, plan, photos],
+	},
+	photos: {
+		removeClass: [photos, nav],
+		addClass: [header, info, map, contact, plan, menu],
+	},
 }
-const handleInfo = () => {
-	header.classList.add('header--disable')
-	info.classList.remove('info--disable')
-	map.classList.remove('map--disable')
-	contact.classList.remove('contact--disable')
-	plan.classList.add('plan--disable')
-	menu.classList.add('menu--disable')
-	photos.classList.add('photos--disable')
-	nav.classList.remove('nav--active')
-}
-const handlePlan = () => {
-	header.classList.add('header--disable')
-	info.classList.add('info--disable')
-	map.classList.add('map--disable')
-	contact.classList.add('contact--disable')
-	plan.classList.remove('plan--disable')
-	menu.classList.add('menu--disable')
-	photos.classList.add('photos--disable')
-	nav.classList.remove('nav--active')
-}
-const handleMenu = () => {
-	header.classList.add('header--disable')
-	info.classList.add('info--disable')
-	map.classList.add('map--disable')
-	contact.classList.add('contact--disable')
-	plan.classList.add('plan--disable')
-	menu.classList.remove('menu--disable')
-	photos.classList.add('photos--disable')
-	nav.classList.remove('nav--active')
-}
-const handlePhotos = () => {
-	header.classList.add('header--disable')
-	info.classList.add('info--disable')
-	map.classList.add('map--disable')
-	contact.classList.add('contact--disable')
-	plan.classList.add('plan--disable')
-	menu.classList.add('menu--disable')
-	photos.classList.remove('photos--disable')
-	nav.classList.remove('nav--active')
+
+const getClassName = item => `${item.classList[0]}--disable`
+
+const handle = action => () => changeClasses(actions[action])
+
+const changeClasses = ({ addClass, removeClass }) => {
+	addClass.forEach(item => item.classList.add(getClassName(item)))
+	removeClass.forEach(item => item.classList.remove(getClassName(item)))
 }
 
 navBtn.addEventListener('click', handleNav)
 appUpdate()
 setInterval(setTime, 1000)
-headerBtn.forEach(btn => btn.addEventListener('click', handleHome))
-infoBtn.forEach(btn => btn.addEventListener('click', handleInfo))
-menuBtn.forEach(btn => btn.addEventListener('click', handleMenu))
-planBtn.forEach(btn => btn.addEventListener('click', handlePlan))
-photosBtn.forEach(btn => btn.addEventListener('click', handlePhotos))
+headerBtn.forEach(btn => btn.addEventListener('click', handle('home')))
+infoBtn.forEach(btn => btn.addEventListener('click', handle('info')))
+menuBtn.forEach(btn => btn.addEventListener('click', handle('menu')))
+planBtn.forEach(btn => btn.addEventListener('click', handle('plan')))
+photosBtn.forEach(btn => btn.addEventListener('click', handle('photos')))
