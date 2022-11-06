@@ -1,4 +1,5 @@
 // font-family: 'Dancing Script', cursive;
+// font-family: 'Petit Formal Script', cursive;
 
 @import './colors';
 @import './components';
@@ -15,11 +16,11 @@
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
-	background-color: $main-color;
-	height: 200vh;
+	height: 100vh;
 }
 
 body {
+	@include heroImages('../img/daniel-j-schwarz-YtY724tdl7Y-unsplash-croped.jpg');
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.6rem;
 }
@@ -88,7 +89,7 @@ body {
 	z-index: 100;
 	transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
 
-	&--active {
+	&--disable {
 		transform: translateX(0);
 	}
 
@@ -126,25 +127,71 @@ body {
 // HEADER
 
 .header {
+	&--disable {
+		display: none;
+	}
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	padding: 2em;
-	height: 75vh;
-	width: 100%;
+	height: 100vh;
 	text-align: center;
-	color: $pure-white;
-
-	img {
-		height: 180px;
-	}
+	color: black;
+	background-attachment: scroll;
 
 	&__heading {
 		font-family: 'Dancing Script', cursive;
 		font-size: 3rem;
 		font-weight: 300;
+	}
+
+	&__timer {
+		margin-top: 100px;
+		// position: absolute;
+		// top: 20px;
+		// left: -30px;
+		&__body {
+			font-family: 'Petit Formal Script', cursive;
+			display: flex;
+			flex-direction: column;
+			width: 100vw;
+			height: 200px;
+			overflow: hidden;
+		}
+
+		.time__section {
+			display: flex;
+			flex-direction: column;
+			z-index: 100;
+
+			&--title {
+				text-align: center;
+				margin-bottom: 20px;
+				font-size: 3rem;
+			}
+
+			&__cards {
+				display: flex;
+				justify-content: space-evenly;
+				width: 100%;
+				.card {
+					display: flex;
+					flex-direction: column;
+					text-align: center;
+					.number {
+						margin-bottom: 10px;
+						font-weight: bold;
+						font-size: 3.5rem;
+					}
+					&__title {
+						font-size: 3rem;
+						font-weight: bold;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -162,14 +209,73 @@ body {
 	animation: navItemsAnimation 1s both;
 }
 
-.black-bars-color,
-.black-bars-color::after,
-.black-bars-color::before {
-	background-color: $dark;
+.contact {
+	&--disable {
+		display: none;
+	}
+}
+
+.info {
+	&--disable {
+		display: none;
+	}
+	&__box {
+		&--icons {
+			height: 100px;
+			display: block;
+			margin: 20px auto;
+			padding: 20px 0 0 0;
+		}
+	}
+}
+.plan {
+	&--disable {
+		display: none;
+	}
+	&__box {
+		&--icons {
+			height: 100px;
+			display: block;
+			margin: 20px auto;
+			padding: 20px 0 0 0;
+		}
+	}
+}
+.menu {
+	&--disable {
+		display: none;
+	}
+	&__box {
+		&--icons {
+			height: 100px;
+			display: block;
+			margin: 20px auto;
+			padding: 20px 0 0 0;
+		}
+	}
+}
+.photos {
+	&--disable {
+		display: none;
+	}
+	&__box {
+		&--icons {
+			height: 100px;
+			display: block;
+			margin: 20px auto;
+			padding: 20px 0 0 0;
+		}
+	}
 }
 
 .map {
+	&--disable {
+		display: none;
+	}
 	&__box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		iframe {
 			border: 0;
 			width: 100%;
@@ -178,29 +284,127 @@ body {
 	}
 }
 
-
 .tittle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 	margin: 1em 0 0.5em 0;
+}
+.text {
+	display: flex;
+	justify-content: center;
+	text-align: center;
 }
 
 li {
 	list-style: none;
 }
 
+.footer {
+	display: none;
+}
+
 ////// MEDIA /////
 
 @media (min-width: 576px) {
 	.header {
+		&__heading {
+			font-size: 4rem;
+		}
 		img {
 			height: 300px;
+		}
+		&__timer {
+			&__body {
+				width: 100vw;
+				height: 250px;
+			}
+	
+			.time__section {
+	
+				&--title {
+					font-size: 5rem;
+				}
+	
+				&__cards {
+					.card {
+						.number {
+							font-size: 5rem;
+						}
+						&__title {
+							font-size: 4.5rem;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.counter {
+		&__app {
+			.time__section {
+				&--title {
+					font-size: 2.5rem;
+				}
+
+				&__cards {
+					.card {
+						.number {
+							font-size: 3rem;
+						}
+					}
+				}
+			}
 		}
 	}
 }
 
 @media (min-width: 768px) {
 	.header {
+		&__heading {
+			font-size: 6rem;
+		}
 		&__img {
 			height: 420px;
+		}
+		&__timer {
+			&__body {
+				width: 70vw;
+				height: 250px;
+			}
+	
+			.time__section {
+	
+				&--title {
+					font-size: 5rem;
+				}
+	
+				&__cards {
+					.card {
+						.number {
+							font-size: 5rem;
+						}
+						&__title {
+							font-size: 4.5rem;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.counter {
+		&__app {
+			.time__section {
+				&__cards {
+					.card {
+						.number {
+							font-size: 3rem;
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -253,6 +457,54 @@ li {
 	.nav {
 		&__item {
 			font-size: 2.2rem;
+		}
+	}
+
+	.header {
+		&--disable {
+			display: none;
+		}
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding: 2em;
+		height: 100vh;
+		text-align: center;
+		color: black;
+		// @include heroImages('../img/daniel-j-schwarz-YtY724tdl7Y-unsplash-croped.jpg');
+		background-attachment: scroll;
+
+		&__heading {
+			font-family: 'Dancing Script', cursive;
+			font-size: 8rem;
+			font-weight: 300;
+		}
+
+		&__timer {
+			&__body {
+				width: 50vw;
+				height: 250px;
+			}
+	
+			.time__section {
+	
+				&--title {
+					font-size: 5rem;
+				}
+	
+				&__cards {
+					.card {
+						.number {
+							font-size: 5rem;
+						}
+						&__title {
+							font-size: 4.5rem;
+						}
+					}
+				}
+			}
 		}
 	}
 }

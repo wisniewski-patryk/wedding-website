@@ -6,11 +6,10 @@
 
 .section-heading {
   position: relative;
-  font-family: cursive;
+  font-family: "Petit Formal Script", cursive;
   margin-bottom: 2em;
   font-size: 3rem;
   font-weight: 300;
-  text-transform: uppercase;
   text-align: center;
   letter-spacing: 2px;
 }
@@ -46,11 +45,14 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  background-color: #ffd6ff;
-  height: 200vh;
+  height: 100vh;
 }
 
 body {
+  background-image: url("../img/daniel-j-schwarz-YtY724tdl7Y-unsplash-croped.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
 }
@@ -84,7 +86,7 @@ body {
   right: 0;
   height: 3px;
   content: "";
-  background-color: #fff;
+  background-color: #BA6F84;
   transition: width 0.3s;
 }
 .burger-btn__bars {
@@ -109,11 +111,11 @@ body {
   height: 100%;
   width: 100%;
   transform: translateX(100%);
-  background-image: linear-gradient(45deg, rgba(187, 208, 255, 0.75), rgba(190, 187, 255, 0.75));
+  background-image: linear-gradient(45deg, rgba(255, 212, 224, 0.75), rgba(252, 191, 255, 0.75));
   z-index: 100;
   transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
-.nav--active {
+.nav--disable {
   transform: translateX(0);
 }
 .nav__item {
@@ -125,7 +127,7 @@ body {
   margin: 0.5em 0;
   padding: 0.5em 2em;
   font-size: 2.8rem;
-  color: #fff;
+  color: #BA6F84;
   text-decoration: none;
 }
 .nav__item::before {
@@ -135,7 +137,7 @@ body {
   width: 100%;
   height: 100%;
   transform: scale(0);
-  border: 3px solid #fff;
+  border: 3px solid #BA6F84;
   border-radius: 8px;
   content: "";
   transition: transform 0.3s;
@@ -151,18 +153,58 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 2em;
-  height: 75vh;
-  width: 100%;
+  height: 100vh;
   text-align: center;
-  color: #fff;
+  color: black;
+  background-attachment: scroll;
 }
-.header img {
-  height: 180px;
+.header--disable {
+  display: none;
 }
 .header__heading {
   font-family: "Dancing Script", cursive;
   font-size: 3rem;
   font-weight: 300;
+}
+.header__timer {
+  margin-top: 100px;
+}
+.header__timer__body {
+  font-family: "Petit Formal Script", cursive;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 200px;
+  overflow: hidden;
+}
+.header__timer .time__section {
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+.header__timer .time__section--title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+.header__timer .time__section__cards {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.header__timer .time__section__cards .card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.header__timer .time__section__cards .card .number {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+.header__timer .time__section__cards .card__title {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 @-webkit-keyframes navItemsAnimation {
@@ -187,12 +229,58 @@ body {
           animation: navItemsAnimation 1s both;
 }
 
-.black-bars-color,
-.black-bars-color::after,
-.black-bars-color::before {
-  background-color: #2e2e2e;
+.contact--disable {
+  display: none;
 }
 
+.info--disable {
+  display: none;
+}
+.info__box--icons {
+  height: 100px;
+  display: block;
+  margin: 20px auto;
+  padding: 20px 0 0 0;
+}
+
+.plan--disable {
+  display: none;
+}
+.plan__box--icons {
+  height: 100px;
+  display: block;
+  margin: 20px auto;
+  padding: 20px 0 0 0;
+}
+
+.menu--disable {
+  display: none;
+}
+.menu__box--icons {
+  height: 100px;
+  display: block;
+  margin: 20px auto;
+  padding: 20px 0 0 0;
+}
+
+.photos--disable {
+  display: none;
+}
+.photos__box--icons {
+  height: 100px;
+  display: block;
+  margin: 20px auto;
+  padding: 20px 0 0 0;
+}
+
+.map--disable {
+  display: none;
+}
+.map__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .map__box iframe {
   border: 0;
   width: 100%;
@@ -200,21 +288,76 @@ body {
 }
 
 .tittle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   margin: 1em 0 0.5em 0;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 li {
   list-style: none;
 }
 
+.footer {
+  display: none;
+}
+
 @media (min-width: 576px) {
+  .header__heading {
+    font-size: 4rem;
+  }
   .header img {
     height: 300px;
   }
+  .header__timer__body {
+    width: 100vw;
+    height: 250px;
+  }
+  .header__timer .time__section--title {
+    font-size: 5rem;
+  }
+  .header__timer .time__section__cards .card .number {
+    font-size: 5rem;
+  }
+  .header__timer .time__section__cards .card__title {
+    font-size: 4.5rem;
+  }
+  .counter__app .time__section--title {
+    font-size: 2.5rem;
+  }
+  .counter__app .time__section__cards .card .number {
+    font-size: 3rem;
+  }
 }
 @media (min-width: 768px) {
+  .header__heading {
+    font-size: 6rem;
+  }
   .header__img {
     height: 420px;
+  }
+  .header__timer__body {
+    width: 70vw;
+    height: 250px;
+  }
+  .header__timer .time__section--title {
+    font-size: 5rem;
+  }
+  .header__timer .time__section__cards .card .number {
+    font-size: 5rem;
+  }
+  .header__timer .time__section__cards .card__title {
+    font-size: 4.5rem;
+  }
+  .counter__app .time__section__cards .card .number {
+    font-size: 3rem;
   }
   .map__box iframe {
     width: 600px;
@@ -253,5 +396,38 @@ li {
 @media (min-width: 1200px) {
   .nav__item {
     font-size: 2.2rem;
+  }
+  .header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+    height: 100vh;
+    text-align: center;
+    color: black;
+    background-attachment: scroll;
+  }
+  .header--disable {
+    display: none;
+  }
+  .header__heading {
+    font-family: "Dancing Script", cursive;
+    font-size: 8rem;
+    font-weight: 300;
+  }
+  .header__timer__body {
+    width: 50vw;
+    height: 250px;
+  }
+  .header__timer .time__section--title {
+    font-size: 5rem;
+  }
+  .header__timer .time__section__cards .card .number {
+    font-size: 5rem;
+  }
+  .header__timer .time__section__cards .card__title {
+    font-size: 4.5rem;
   }
 }/*# sourceMappingURL=main.css.map */

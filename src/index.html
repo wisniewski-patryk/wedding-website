@@ -5,18 +5,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aleksandra i Patryka</title>
+  <title>Ślub Aleksandry i Patryka</title>
   <script src="https://kit.fontawesome.com/e9b3690385.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Petit+Formal+Script&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
-  <header class="header section">
-    <!-- <h1 class="header__heading">Wesele Aleksandry i Patryka</h1> -->
-    <img class="header__img" src="./img/logo-fullname.jpg">
+
+
+
+
+  <header id="home" class="header section">
+    <h1 class="header__heading">Ślub Aleksandry i Patryka</h1>
+    <div class="header__timer">
+      <div class="header__timer__body">
+        <div class="time__section">
+          <h3 class="time__section--title">Ślub za:</h3>
+          <div class="time__section__cards">
+            <div class="card">
+              <p class="days__count number"></p>
+              <p class="card__title">Dni</p>
+            </div>
+            <div class="card">
+              <p class="hours__count number"></p>
+              <p class="card__title">Godzin</p>
+            </div>
+            <div class="card">
+              <p class="minutes__count number"></p>
+              <p class="card__title">Minut</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
 
   <button class="burger-btn">
@@ -27,112 +54,80 @@
 
   <nav class="nav nav-mobile">
     <div class="nav__items">
-      <a href="#basic-information" class="nav__item">Informacje</a>
-      <a href="#weddingPlan" class="nav__item">Plan ślubu i wesela</a>
-      <a href="#weddingMenu" class="nav__item">Menu</a>
-      <a href="#QandA" class="nav__item">Q&A</a>
-      <a href="#weddingPhotos" class="nav__item">Zdjęcia i filmy</a>
+      <a href="#home" class="nav__item homeBtn">Strona główna</a>
+      <a href="#QandA" class="nav__item QandABtn">Q&A</a>
+      <a href="#weddingPlan" class="nav__item planBtn">Plan ślubu i wesela</a>
+      <a href="#weddingMenu" class="nav__item menuBtn">Menu</a>
+      <a href="#weddingPhotos" class="nav__item photosBtn">Zdjęcia i filmy</a>
     </div>
   </nav>
 
   <nav class="nav nav-desktop">
     <div class="nav__items">
-      <a href="#basic-information" class="nav__item">Informacje</a>
-      <a href="#weddingPlan" class="nav__item">Plan ślubu i Wesela</a>
-      <a href="#weddingMenu" class="nav__item">Menu</a>
-      <a href="#QandA" class="nav__item">Q&A</a>
-      <a href="#weddingPhotos" class="nav__item">Zdjęcia i filmy</a>
+      <a href="#home" class="nav__item homeBtn">Strona główna</a>
+      <a href="#QandA" class="nav__item QandABtn">Q&A</a>
+      <a href="#weddingPlan" class="nav__item planBtn">Plan ślubu i Wesela</a>
+      <a href="#weddingMenu" class="nav__item menuBtn">Menu</a>
+      <a href="#weddingPhotos" class="nav__item photosBtn">Zdjęcia i filmy</a>
     </div>
   </nav>
 
-  <!-- <div class="logo">
-    <img src="img/logo2.png" alt="para młoda">
+  
 
-  </div> -->
-  <!-- <section class="info section-padding section">
+  <section id="QandA" class="info section-padding section info--disable">
     <div class="wrapper">
-      <p>na mobilkach zdjęcie docięte na wysokość 250px? na całą szerokość (croped img to ma być, jak będziemy mieć
-        zdjęcie będziemy dogrywać dokładnie jak to dociąć)</p>
-      <img height="180px" src="./img/logo-fullname.jpg">
-    </div>
-  </section> -->
-
-  <section id="contactToUs" class="contact section-padding section">
-    <div class="wrapper">
-      <div class="contact__box">
-        <h2 class="section-heading">Kontakt</h2>
+      <h2 class="section-heading">Q&A</h2>
+      <div class="info__box--list">
         <ol>
           <li>
-            <h3 class="tittle">Aleksandra</h3>
-            <p>tu będzie numer telefonu</p>
-          </li>
-          <li>
-            <h3 class="tittle">Patryk</h3>
-            <p>tu będzie numer telefonu</p>
-          </li>
-          <li>
-            <h3 class="tittle">Klaudia - świadkowa</h3>
-            <p>tu będzie numer telefonu</p>
-          </li>
-          <li>
-            <h3 class="tittle">Mariusz - świadek</h3>
-            <p>tu będzie numer telefonu</p>
-          </li>
-          <li>
-            <h3 class="tittle">Basia - wsparcie</h3>
-            <p>tu będzie numer telefonu</p>
-          </li>
-        </ol>
-        <p>W czasie uroczystości prosimy w sprawach bierzących </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="QandA" class="info section-padding section">
-    <div class="wrapper">
-      <div class="info__box">
-        <h2 class="section-heading">Q&A</h2>
-        <ol>
-          <li>
+            <img class="info__box--icons" src="./img/icons/federal-palace-of-switzerland.png">
             <h3 class="tittle">Gdzie odbędzie się ceremonia zaślubin?</h3>
-            <p>Ceremonia odbędzie się w ogrodzie sali weselnej Nowa Holandia przy obwodnicy Elbląga, zjazd z S7 przy
-              stacji benzynowej SHELL.</p>
+            <p class="text">Ceremonia odbędzie się w ogrodzie sali weselnej Nowa Holandia przy obwodnicy Elbląga.</p>
           </li>
-          <li>
+          <li class="info__box--list">
+            <img class="info__box--icons" src="./img/icons/tracking.png">
             <h3 class="tittle">Jak dojechać do sali?</h3>
-            <p>Obwodnicą Elbląga, zjazd z S7 przy stacji benzynowej SHELL. W mapach Google wpiszcie "Nowa Holandia" -
+            <p class="text">Obwodnicą Elbląga, zjazd z S7 przy stacji benzynowej SHELL. W mapach Google wpiszcie "Nowa
+              Holandia" -
               bez trudu dojedziecie na miejsce :)</p>
           </li>
-          <li>
+          <li class="info__box--list">
+            <img class="info__box--icons" src="./img/icons/parking.png">
             <h3 class="tittle">Czy przy sali dostępny jest parking?</h3>
-            <p>Tak - bezpośrednio przed głównym wejściem do sali znajduje się bezpłatny parking samochodowy.</p>
+            <p class="text">Tak - bezpośrednio przed głównym wejściem do sali znajduje się bezpłatny parking
+              samochodowy.</p>
           </li>
-          <li>
+          <li class="info__box--list">
+            <img class="info__box--icons" src="./img/icons/rainy.png">
             <h3 class="tittle">Co jeżeli będzie padać?</h3>
-            <p>Mamy nadzieję, że nie będzie! Na wszelki wypadek mamy jednak przewidziany plan B i w razie potrzeby
+            <p class="text">Mamy nadzieję, że nie będzie! Na wszelki wypadek mamy jednak przewidziany plan B i w razie
+              potrzeby
               ceremonia zostanie przeniesiona pod zadaszenie przy sali. Samo wesele zaplanowane jest wewnątrz
               restauracji - bez względu na pogodę.</p>
           </li>
-          <li>
+          <li class="info__box--list">
+            <img class="info__box--icons" src="./img/icons/baby-boy.png">
             <h3 class="tittle">Na zaproszeniu nie wymieniono moich dzieci, czy to pomyłka?</h3>
-            <p>Nie. Wspólnie zadecydowaliśmy, że z uwagi na charakter imprezy (wszechobecny alkohol i późną porę) nie
+            <p class="text">Nie. Wspólnie zadecydowaliśmy, że z uwagi na charakter imprezy (wszechobecny alkohol i późną
+              porę) nie
               będzie to odpowiednie miejsce dla dzieci. Dlatego zaprosiliśmy wyłącznie bliskie nam osoby powyżej 16 r.ż.
               Mamy nadzieję, że rozumiecie naszą decyzję.</p>
           </li>
-
-          <li>
+          <li class="info__box--list">
+            <img class="info__box--icons" src="./img/icons/salad.png">
             <h3 class="tittle">Co jeśli nie jem mięsa?</h3>
-            <p>Żaden problem - jeśli jesteście wegetarianami to prosimy abyście dali nam znać o swoich preferencjach
+            <p class="text">Żaden problem - jeśli jesteście wegetarianami to prosimy abyście dali nam znać o swoich
+              preferencjach
               przy potwierdzaniu obecności. Informacje zostaną przekazane do restauracji, która weźmie pod uwagę waszą
               dietę. Prosimy jednak, by z tej opcji korzystały wyłącznie osoby praktykujące wegetarianizm na co dzień,
               gdyż serwowane posiłki są ustalane z salą na około dwa miesiące przed datą ślubu i po tym czasie nie ma
               możliwości ich zmiany.</p>
           </li>
-
-
-          <li>
+          <li class="info__box--list">
+            <img class="info__box--icons" src="./img/icons/taxi.png">
             <h3 class="tittle">Jak po weselu wrócić do domu/hotelu?</h3>
-            <p>Najkorzystniej będzie zamówić taksówkę z TeleTaxi (tel. 55 233 24 44). Sala, w której odbędzie się wesele
+            <p class="text">Najkorzystniej będzie zamówić taksówkę z TeleTaxi (tel. 55 233 24 44). Sala, w której
+              odbędzie się wesele
               ma z nimi podpisaną umowę o niewłączaniu strefy pozamiastowej, dzięki czemu cena za dojazd powinna być
               niższa niż u pozostałych firm taksówkarskich.</p>
           </li>
@@ -142,9 +137,35 @@
     </div>
   </section>
 
-  <section id="placeWithMap" class="map section-padding section">
+  <section id="contactToUs" class="contact section-padding section contact--disable">
     <div class="wrapper">
-      <h2 class="section-heading">Mapa</h2>
+      <div class="contact__box">
+        <h2 class="section-heading">kontakt</h2>
+        <p class="text">W razie potrzeby prosimy kontaktować się z poniższymi osobami. </p>
+        <ol>
+          <li>
+            <h3 class="tittle">Aleksandra</h3>
+          </li>
+          <li>
+            <h3 class="tittle">Patryk</h3>
+          </li>
+          <li>
+            <h3 class="tittle">Klaudia - świadkowa</h3>
+          </li>
+          <li>
+            <h3 class="tittle">Mariusz - świadek</h3>
+          </li>
+          <!-- <li>
+            <h3 class="tittle">Basia - wsparcie</h3>
+          </li> -->
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="placeWithMap" class="map section-padding section map--disable">
+    <div class="wrapper">
+      <h2 class="section-heading">mapa</h2>
       <div class="map__box">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2337.4599381008347!2d19.414231016137602!3d54.136497880152234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd4ce288cd6139%3A0xb16e7886925213f1!2sNowa%20Holandia!5e0!3m2!1sen!2spl!4v1665783352748!5m2!1sen!2spl"
@@ -153,29 +174,29 @@
     </div>
   </section>
 
-  <section id="weddingPlan" class="info section-padding section">
+  <section id="weddingPlan" class="plan section-padding section plan--disable">
     <div class="wrapper">
-      <h2 class="section-heading">Plan Wesela</h2>
-      <div class="info__box">
-        <p>w tym miejscu będzie plan wesela :)</p>
+      <h2 class="section-heading">plan wesela</h2>
+      <div class="plan__box">
+        <p class="text">w tym miejscu będzie plan wesela :)</p>
       </div>
     </div>
   </section>
 
-  <section id="weddingMenu" class="info section-padding section">
+  <section id="weddingMenu" class="menu section-padding section menu--disable">
     <div class="wrapper">
-      <h2 class="section-heading">Menu Weselne</h2>
-      <div class="info__box">
-        <p>w tym miejscu będzie menu weselne :)</p>
+      <h2 class="section-heading">menu weselne</h2>
+      <div class="menu__box">
+        <p class="text">w tym miejscu będzie menu weselne :)</p>
       </div>
     </div>
   </section>
 
-  <section id="weddingPhotos" class="info section-padding section">
+  <section id="weddingPhotos" class="photos section-padding section photos--disable">
     <div class="wrapper">
-      <h2 class="section-heading">Zdjęcia</h2>
-      <div class="info__box">
-        <p>w tym miejscu będą zdjęcia :)</p>
+      <h2 class="section-heading">zdjęcia</h2>
+      <div class="photos__box">
+        <p class="text">w tym miejscu będą zdjęcia :)</p>
       </div>
     </div>
 
