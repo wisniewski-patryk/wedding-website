@@ -20,7 +20,7 @@ html {
 }
 
 body {
-	@include heroImages('../img/daniel-j-schwarz-YtY724tdl7Y-unsplash-croped.jpg');
+	// @include heroImages('../img/daniel-j-schwarz-YtY724tdl7Y-unsplash-croped.jpg');
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.6rem;
 }
@@ -127,6 +127,7 @@ body {
 // HEADER
 
 .header {
+	@include heroImages('../img/daniel-j-schwarz-YtY724tdl7Y-unsplash-croped.jpg');
 	&--disable {
 		display: none;
 	}
@@ -169,7 +170,7 @@ body {
 			&--title {
 				text-align: center;
 				margin-bottom: 20px;
-				font-size: 3rem;
+				font-size: 2.5rem;
 			}
 
 			&__cards {
@@ -183,16 +184,21 @@ body {
 					.number {
 						margin-bottom: 10px;
 						font-weight: bold;
-						font-size: 3.5rem;
+						font-size: 2.5rem;
 					}
 					&__title {
-						font-size: 3rem;
+						font-size: 2.5rem;
 						font-weight: bold;
 					}
 				}
 			}
 		}
 	}
+}
+
+.section {
+	background-color: $section-color;
+	min-height: 100vh;
 }
 
 @keyframes navItemsAnimation {
@@ -320,20 +326,19 @@ li {
 				width: 100vw;
 				height: 250px;
 			}
-	
+
 			.time__section {
-	
 				&--title {
-					font-size: 5rem;
+					font-size: 3.5rem;
 				}
-	
+
 				&__cards {
 					.card {
 						.number {
-							font-size: 5rem;
+							font-size: 3.5rem;
 						}
 						&__title {
-							font-size: 4.5rem;
+							font-size: 3.5rem;
 						}
 					}
 				}
@@ -373,13 +378,12 @@ li {
 				width: 70vw;
 				height: 250px;
 			}
-	
+
 			.time__section {
-	
 				&--title {
 					font-size: 5rem;
 				}
-	
+
 				&__cards {
 					.card {
 						.number {
@@ -487,13 +491,12 @@ li {
 				width: 50vw;
 				height: 250px;
 			}
-	
+
 			.time__section {
-	
 				&--title {
 					font-size: 5rem;
 				}
-	
+
 				&__cards {
 					.card {
 						.number {
