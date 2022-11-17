@@ -82,7 +82,7 @@ body {
   right: 0;
   height: 3px;
   content: "";
-  background-color: #ba6f84;
+  background-color: #99535b;
   transition: width 0.3s;
 }
 .burger-btn__bars {
@@ -107,7 +107,7 @@ body {
   height: 100%;
   width: 100%;
   transform: translateX(100%);
-  background-image: linear-gradient(45deg, rgb(255, 212, 224), rgb(252, 191, 255));
+  background-image: linear-gradient(45deg, #dbbdc0, #dbbdc0);
   z-index: 100;
   transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
@@ -123,7 +123,7 @@ body {
   margin: 0.5em 0;
   padding: 0.5em 2em;
   font-size: 2.8rem;
-  color: #ba6f84;
+  color: #99535b;
   text-decoration: none;
 }
 .nav__item::before {
@@ -133,7 +133,7 @@ body {
   width: 100%;
   height: 100%;
   transform: scale(0);
-  border: 3px solid #ba6f84;
+  border: 3px solid #99535b;
   border-radius: 8px;
   content: "";
   transition: transform 0.3s;
@@ -143,7 +143,7 @@ body {
 }
 
 .header {
-  background-image: url("../img/daniel-j-schwarz-YtY724tdl7Y-unsplash-croped.jpg");
+  background-image: url("../img/oip-alinalukaszewskafotografia-25.JPG");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -155,7 +155,7 @@ body {
   padding: 2em;
   height: 100vh;
   text-align: center;
-  color: black;
+  color: #f6f8f7;
   background-attachment: scroll;
 }
 .header--disable {
@@ -411,7 +411,7 @@ li {
     padding: 2em;
     height: 100vh;
     text-align: center;
-    color: black;
+    color: #f6f8f7;
     background-attachment: scroll;
   }
   .header--disable {

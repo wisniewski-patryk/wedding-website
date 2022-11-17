@@ -127,7 +127,7 @@ body {
 // HEADER
 
 .header {
-	@include heroImages('../img/daniel-j-schwarz-YtY724tdl7Y-unsplash-croped.jpg');
+	@include heroImages('../img/oip-alinalukaszewskafotografia-25.JPG');
 	&--disable {
 		display: none;
 	}
@@ -139,7 +139,7 @@ body {
 	padding: 2em;
 	height: 100vh;
 	text-align: center;
-	color: black;
+	color: #f6f8f7;
 	background-attachment: scroll;
 
 	&__heading {
@@ -476,7 +476,7 @@ li {
 		padding: 2em;
 		height: 100vh;
 		text-align: center;
-		color: black;
+		color: #f6f8f7;
 		// @include heroImages('../img/daniel-j-schwarz-YtY724tdl7Y-unsplash-croped.jpg');
 		background-attachment: scroll;
 
