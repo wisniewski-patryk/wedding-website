@@ -146,6 +146,7 @@ body {
   background-image: url("../img/oip-alinalukaszewskafotografia-25.JPG");
   background-size: cover;
   background-position: center;
+  background-position-x: 70%;
   background-attachment: fixed;
   position: relative;
   display: flex;
@@ -162,12 +163,15 @@ body {
   display: none;
 }
 .header__heading {
+  position: absolute;
+  top: 15%;
+  color: #99535b;
   font-family: "Dancing Script", cursive;
   font-size: 3rem;
   font-weight: 300;
 }
 .header__timer {
-  margin-top: 100px;
+  margin-top: 300px;
 }
 .header__timer__body {
   font-family: "Petit Formal Script", cursive;
@@ -185,6 +189,7 @@ body {
 .header__timer .time__section--title {
   text-align: center;
   margin-bottom: 20px;
+  font-weight: normal;
   font-size: 2.5rem;
 }
 .header__timer .time__section__cards {
@@ -199,12 +204,10 @@ body {
 }
 .header__timer .time__section__cards .card .number {
   margin-bottom: 10px;
-  font-weight: bold;
   font-size: 2.5rem;
 }
 .header__timer .time__section__cards .card__title {
   font-size: 2.5rem;
-  font-weight: bold;
 }
 
 .section {
@@ -353,10 +356,10 @@ li {
     height: 250px;
   }
   .header__timer .time__section--title {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
   .header__timer .time__section__cards .card .number {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
   .header__timer .time__section__cards .card__title {
     font-size: 4.5rem;
@@ -396,6 +399,7 @@ li {
   }
   .header__heading {
     font-size: 8rem;
+    top: 10%;
   }
 }
 @media (min-width: 1200px) {
@@ -427,10 +431,10 @@ li {
     height: 250px;
   }
   .header__timer .time__section--title {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
   .header__timer .time__section__cards .card .number {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
   .header__timer .time__section__cards .card__title {
     font-size: 4.5rem;
