@@ -33,7 +33,7 @@ const handleNavItemsAnimation = () => {
 
 const setTime = () => {
 	const currentTime = new Date()
-	const result = usersTime - currentTime
+	const result = new Date('9 15 2023 16:00:00') - currentTime
 
 	const days = Math.floor(result / 1000 / 60 / 60 / 24)
 	const hours = Math.floor(result / 1000 / 60 / 60) % 24
@@ -42,11 +42,6 @@ const setTime = () => {
 	daysCount.textContent = days
 	hoursCount.textContent = hours
 	minutesCount.textContent = minutes
-}
-
-const appUpdate = () => {
-	usersTime = new Date('9 15 2023 16:00:00')
-	setTime()
 }
 
 const actions = {
@@ -82,8 +77,7 @@ const changeClasses = ({ addClass, removeClass }) => {
 }
 
 navBtn.addEventListener('click', handleNav)
-appUpdate()
-setInterval(setTime, 1000)
+setInterval(setTime, 60000)
 headerBtn.forEach(btn => btn.addEventListener('click', handle('home')))
 infoBtn.forEach(btn => btn.addEventListener('click', handle('info')))
 menuBtn.forEach(btn => btn.addEventListener('click', handle('menu')))
