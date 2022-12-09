@@ -7,7 +7,7 @@ const hoursCount = document.querySelector('.hours__count')
 const minutesCount = document.querySelector('.minutes__count')
 const secondsCount = document.querySelector('.seconds__count')
 const [header, info, contact, map, plan, menu, photos] = document.querySelectorAll(
-	'.header, .plan, .contact, .info, .map, .menu, .photos'
+	'.header, .info, .contact, .map, .plan, .menu, .photos'
 )
 const headerBtn = document.querySelectorAll('.homeBtn')
 const infoBtn = document.querySelectorAll('.QandABtn')
@@ -87,7 +87,6 @@ const changeClasses = ({ addClass, removeClass }) => {
 }
 
 navBtn.addEventListener('click', handleNav)
-appUpdate()
 setInterval(setTime, 1000)
 headerBtn.forEach(btn => btn.addEventListener('click', handle('home')))
 infoBtn.forEach(btn => btn.addEventListener('click', handle('info')))
