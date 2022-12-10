@@ -218,6 +218,13 @@ body {
 	&--disable {
 		display: none;
 	}
+
+	&__box {
+		&--icons {
+			height: 40px;
+			display: inline;
+		}
+	}
 }
 
 .info {
@@ -237,39 +244,15 @@ body {
 	&--disable {
 		display: none;
 	}
-	&__box {
-		&--icons {
-			height: 100px;
-			display: block;
-			margin: 20px auto;
-			padding: 20px 0 0 0;
-		}
-	}
 }
 .menu {
 	&--disable {
 		display: none;
 	}
-	&__box {
-		&--icons {
-			height: 100px;
-			display: block;
-			margin: 20px auto;
-			padding: 20px 0 0 0;
-		}
-	}
 }
 .photos {
 	&--disable {
 		display: none;
-	}
-	&__box {
-		&--icons {
-			height: 100px;
-			display: block;
-			margin: 20px auto;
-			padding: 20px 0 0 0;
-		}
 	}
 }
 
@@ -428,6 +411,7 @@ li {
 		display: none;
 	}
 	.nav {
+		height: 0;
 		background-image: none;
 		transform: translateX(0%);
 		&__item {
