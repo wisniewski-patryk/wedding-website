@@ -69,11 +69,11 @@ const actions = {
 	},
 	map: {
 		removeClass: [map, nav],
-		addClass: [header, info, map, contact, plan, menu],
+		addClass: [header, info, photos, contact, plan, menu],
 	},
 	contact: {
 		removeClass: [contact, nav],
-		addClass: [header, info, map, contact, plan, menu],
+		addClass: [header, info, map, photos, plan, menu],
 	},
 }
 
