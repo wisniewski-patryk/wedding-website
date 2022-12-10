@@ -143,16 +143,16 @@ body {
 	background-attachment: scroll;
 
 	&__heading {
+		position: absolute;
+		top: 15%;
+		color: $pure-white;
 		font-family: 'Dancing Script', cursive;
 		font-size: 3rem;
 		font-weight: 300;
 	}
 
 	&__timer {
-		margin-top: 100px;
-		// position: absolute;
-		// top: 20px;
-		// left: -30px;
+		margin-top: 300px;
 		&__body {
 			font-family: 'Petit Formal Script', cursive;
 			display: flex;
@@ -170,6 +170,7 @@ body {
 			&--title {
 				text-align: center;
 				margin-bottom: 20px;
+				font-weight: normal;
 				font-size: 2.5rem;
 			}
 
@@ -183,12 +184,10 @@ body {
 					text-align: center;
 					.number {
 						margin-bottom: 10px;
-						font-weight: bold;
 						font-size: 2.5rem;
 					}
 					&__title {
 						font-size: 2.5rem;
-						font-weight: bold;
 					}
 				}
 			}
@@ -381,13 +380,13 @@ li {
 
 			.time__section {
 				&--title {
-					font-size: 5rem;
+					font-size: 4.5rem;
 				}
 
 				&__cards {
 					.card {
 						.number {
-							font-size: 5rem;
+							font-size: 4.5rem;
 						}
 						&__title {
 							font-size: 4.5rem;
@@ -453,6 +452,7 @@ li {
 	.header {
 		&__heading {
 			font-size: 8rem;
+			top: 10%;
 		}
 	}
 }
@@ -494,13 +494,13 @@ li {
 
 			.time__section {
 				&--title {
-					font-size: 5rem;
+					font-size: 4.5rem;
 				}
 
 				&__cards {
 					.card {
 						.number {
-							font-size: 5rem;
+							font-size: 4.5rem;
 						}
 						&__title {
 							font-size: 4.5rem;

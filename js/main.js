@@ -14,8 +14,8 @@ const infoBtn = document.querySelectorAll('.QandABtn')
 const planBtn = document.querySelectorAll('.planBtn')
 const menuBtn = document.querySelectorAll('.menuBtn')
 const photosBtn = document.querySelectorAll('.photosBtn')
-const contactBtn = document.querySelectorAll('.contactBtn')
 const mapBtn = document.querySelectorAll('.mapBtn')
+const contactBtn = document.querySelectorAll('.contactBtn')
 
 const handleNav = () => {
 	nav.classList.toggle('nav--disable')
@@ -53,7 +53,7 @@ const actions = {
 	},
 	info: {
 		removeClass: [info, nav],
-		addClass: [header, plan, menu, photos, map, contact],
+		addClass: [header, plan, menu, map, contact, photos],
 	},
 	plan: {
 		removeClass: [plan, nav],
@@ -67,13 +67,13 @@ const actions = {
 		removeClass: [photos, nav],
 		addClass: [header, info, map, contact, plan, menu],
 	},
-	contact: {
-		removeClass: [contact, nav],
-		addClass: [header, info, map, photos, plan, menu],
-	},
 	map: {
 		removeClass: [map, nav],
-		addClass: [header, info, photos, contact, plan, menu],
+		addClass: [header, info, map, contact, plan, menu],
+	},
+	contact: {
+		removeClass: [contact, nav],
+		addClass: [header, info, map, contact, plan, menu],
 	},
 }
 
@@ -93,5 +93,5 @@ infoBtn.forEach(btn => btn.addEventListener('click', handle('info')))
 menuBtn.forEach(btn => btn.addEventListener('click', handle('menu')))
 planBtn.forEach(btn => btn.addEventListener('click', handle('plan')))
 photosBtn.forEach(btn => btn.addEventListener('click', handle('photos')))
-contactBtn.forEach(btn => btn.addEventListener('click', handle('contact')))
 mapBtn.forEach(btn => btn.addEventListener('click', handle('map')))
+contactBtn.forEach(btn => btn.addEventListener('click', handle('contact')))
