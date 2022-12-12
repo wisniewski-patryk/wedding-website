@@ -244,6 +244,10 @@ body {
   height: 40px;
   display: inline;
 }
+.contact__box--icons:hover {
+  transform: scale(1.3);
+  transition: 0.2s;
+}
 
 .info--disable {
   display: none;
