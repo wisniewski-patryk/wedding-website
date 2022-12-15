@@ -57,11 +57,11 @@ const interval = setInterval(() => {
   const timeLeft = targetDate - currentDate;
 
   // Jeśli czas do końca jest mniejszy lub równy zero, kończymy timer
-  if (timeLeft <= 0) {
-    clearInterval(interval);
-    console.log("Timer zakończony!");
-    return;
-  }
+//   if (timeLeft <= 0) {
+//     clearInterval(interval);
+//     console.log("Timer zakończony!");
+//     return;
+//   }
 
   // Dzielimy różnicę czasu na jednostki czasu (sekundy, minuty itp.)
   const seconds = Math.floor((timeLeft / 1000) % 60);
