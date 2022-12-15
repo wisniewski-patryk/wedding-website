@@ -45,26 +45,13 @@ const handleNavItemsAnimation = () => {
 	})
 }
 
-// Ustawiamy datę końcową jako za dwa tygodnie
 const targetDate = new Date('9 15 2023 16:00:00');
 
-// Ustawiamy interwał, który będzie wywoływany co sekundę
 const interval = setInterval(() => {
-  // Pobieramy obecną datę i czas
   const currentDate = new Date();
 
-  // Obliczamy różnicę czasu między datami
   const timeLeft = targetDate - currentDate;
 
-  // Jeśli czas do końca jest mniejszy lub równy zero, kończymy timer
-//   if (timeLeft <= 0) {
-//     clearInterval(interval);
-//     console.log("Timer zakończony!");
-//     return;
-//   }
-
-  // Dzielimy różnicę czasu na jednostki czasu (sekundy, minuty itp.)
-  const seconds = Math.floor((timeLeft / 1000) % 60);
   const minutes = Math.floor((timeLeft / 1000 / 60) % 60);
   const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
   const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
@@ -74,19 +61,6 @@ const interval = setInterval(() => {
   minutesCount.textContent = minutes
 }, 1000);
 
-
-// const setTime = () => {
-// 	const currentTime = new Date()
-// 	const result = new Date('9 15 2023 16:00:00') - currentTime
-
-// 	const days = Math.floor(result / 1000 / 60 / 60 / 24)
-// 	const hours = Math.floor(result / 1000 / 60 / 60) % 24
-// 	const minutes = Math.floor(result / 1000 / 60) % 60
-
-	// daysCount.textContent = days
-	// hoursCount.textContent = hours
-	// minutesCount.textContent = minutes
-// }
 
 const actions = {
 	home: {
@@ -129,7 +103,6 @@ const changeClasses = ({ addClass, removeClass }) => {
 }
 
 navBtn.addEventListener('click', handleNav)
-// setInterval(setTime, 1000)
 headerBtn.forEach(btn => btn.addEventListener('click', handle('home')))
 infoBtn.forEach(btn => btn.addEventListener('click', handle('info')))
 menuBtn.forEach(btn => btn.addEventListener('click', handle('menu')))
