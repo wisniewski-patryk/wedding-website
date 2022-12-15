@@ -15,6 +15,19 @@ const menuBtn = document.querySelectorAll('.menuBtn')
 const photosBtn = document.querySelectorAll('.photosBtn')
 const mapBtn = document.querySelectorAll('.mapBtn')
 const contactBtn = document.querySelectorAll('.contactBtn')
+const elements = document.querySelectorAll('.nav__item')
+const colors = {}
+
+elements.forEach(element => {
+	element.addEventListener('click', () => {
+		if (!colors[element.className]) {
+			colors[element.className] = element.style.color
+		}
+		element.style.color = 'red'
+	})
+})
+
+
 
 const handleNav = () => {
 	nav.classList.toggle('nav--disable')
@@ -94,3 +107,11 @@ planBtn.forEach(btn => btn.addEventListener('click', handle('plan')))
 photosBtn.forEach(btn => btn.addEventListener('click', handle('photos')))
 mapBtn.forEach(btn => btn.addEventListener('click', handle('map')))
 contactBtn.forEach(btn => btn.addEventListener('click', handle('contact')))
+document.addEventListener('click', event => {
+	elements.forEach(element => {
+		if (event.target !== element) {
+			element.style.color = colors[element.className]
+			colors[element.className] = null
+		}
+	})
+})
