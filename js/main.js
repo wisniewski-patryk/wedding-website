@@ -23,7 +23,7 @@ elements.forEach(element => {
 		if (!colors[element.className]) {
 			colors[element.className] = element.style.color
 		}
-		element.style.color = 'red'
+		element.style.color = '#dc6327'
 	})
 })
 
