@@ -47,6 +47,13 @@ const interval = setInterval(() => {
 	daysCount.textContent = days
 	hoursCount.textContent = hours
 	minutesCount.textContent = minutes
+
+	if (timeLeft < 0) {
+		clearInterval(interval)
+		daysCount.textContent = '0'
+		hoursCount.textContent = '0'
+		minutesCount.textContent = '0'
+	}
 }, 1000)
 
 const actions = {
