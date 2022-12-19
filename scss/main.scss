@@ -421,7 +421,7 @@ li {
 		transform: translateX(0%);
 		&__item {
 			display: inline-block;
-			font-size: 1.8rem;
+			font-size: 1.6rem;
 
 			&:hover::before {
 				transform: scale(1);
@@ -449,7 +449,7 @@ li {
 @media (min-width: 1200px) {
 	.nav {
 		&__item {
-			font-size: 2.2rem;
+			font-size: 1.9rem;
 		}
 	}
 
@@ -497,6 +497,14 @@ li {
 					}
 				}
 			}
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	.nav {
+		&__item {
+			font-size: 2.2rem;
 		}
 	}
 }

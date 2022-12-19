@@ -376,7 +376,7 @@ li {
   }
   .nav__item {
     display: inline-block;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .nav__item:hover::before {
     transform: scale(1);
@@ -396,7 +396,7 @@ li {
 }
 @media (min-width: 1200px) {
   .nav__item {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
   }
   .header {
     position: relative;
@@ -430,5 +430,10 @@ li {
   }
   .header__timer .time__section__cards .card__title {
     font-size: 4.5rem;
+  }
+}
+@media (min-width: 1400px) {
+  .nav__item {
+    font-size: 2.2rem;
   }
 }/*# sourceMappingURL=main.css.map */
