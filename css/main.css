@@ -308,6 +308,10 @@ li {
   display: none;
 }
 
+.active-section {
+  color: #dc6327;
+}
+
 @media (min-width: 576px) {
   .header__heading {
     font-size: 4rem;

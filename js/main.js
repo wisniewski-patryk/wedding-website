@@ -15,19 +15,7 @@ const menuBtn = document.querySelectorAll('.menuBtn')
 const photosBtn = document.querySelectorAll('.photosBtn')
 const mapBtn = document.querySelectorAll('.mapBtn')
 const contactBtn = document.querySelectorAll('.contactBtn')
-const elements = document.querySelectorAll('.nav__item')
-const colors = {}
-
-elements.forEach(element => {
-	element.addEventListener('click', () => {
-		if (!colors[element.className]) {
-			colors[element.className] = element.style.color
-		}
-		element.style.color = '#dc6327'
-	})
-})
-
-
+const sections = document.querySelectorAll('.nav__item')
 
 const handleNav = () => {
 	nav.classList.toggle('nav--disable')
@@ -45,22 +33,21 @@ const handleNavItemsAnimation = () => {
 	})
 }
 
-const targetDate = new Date('9 15 2023 16:00:00');
+const targetDate = new Date('9 15 2023 16:00:00')
 
 const interval = setInterval(() => {
-  const currentDate = new Date();
+	const currentDate = new Date()
 
-  const timeLeft = targetDate - currentDate;
+	const timeLeft = targetDate - currentDate
 
-  const minutes = Math.floor((timeLeft / 1000 / 60) % 60);
-  const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
-  const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+	const minutes = Math.floor((timeLeft / 1000 / 60) % 60)
+	const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24)
+	const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24))
 
-  daysCount.textContent = days
-  hoursCount.textContent = hours
-  minutesCount.textContent = minutes
-}, 1000);
-
+	daysCount.textContent = days
+	hoursCount.textContent = hours
+	minutesCount.textContent = minutes
+}, 1000)
 
 const actions = {
 	home: {
@@ -110,11 +97,9 @@ planBtn.forEach(btn => btn.addEventListener('click', handle('plan')))
 photosBtn.forEach(btn => btn.addEventListener('click', handle('photos')))
 mapBtn.forEach(btn => btn.addEventListener('click', handle('map')))
 contactBtn.forEach(btn => btn.addEventListener('click', handle('contact')))
-document.addEventListener('click', event => {
-	elements.forEach(element => {
-		if (event.target !== element) {
-			element.style.color = colors[element.className]
-			colors[element.className] = null
-		}
+sections.forEach(section => {
+	section.addEventListener('click', () => {
+		sections.forEach(s => s.classList.remove('active-section'))
+		section.classList.add('active-section')
 	})
 })
