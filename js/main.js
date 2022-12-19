@@ -33,7 +33,7 @@ const handleNavItemsAnimation = () => {
 	})
 }
 
-const targetDate = new Date('9 15 2023 16:00:00')
+const targetDate = new Date('2023-09-15T14:00:00.000Z')
 
 const interval = setInterval(() => {
 	const currentDate = new Date()
