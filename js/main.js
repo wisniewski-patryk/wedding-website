@@ -33,7 +33,7 @@ const handleNavItemsAnimation = () => {
 	})
 }
 
-const targetDate = new Date('9 15 2023 16:00:00')
+const targetDate = new Date('2023-09-15T16:00:00.000Z')
 
 const interval = setInterval(() => {
 	const currentDate = new Date()
@@ -48,12 +48,12 @@ const interval = setInterval(() => {
 	hoursCount.textContent = hours
 	minutesCount.textContent = minutes
 
-	if (timeLeft < 0) {
-		clearInterval(interval)
-		daysCount.textContent = '0'
-		hoursCount.textContent = '0'
-		minutesCount.textContent = '0'
-	}
+	// if (timeLeft < 0) {
+	// 	clearInterval(interval)
+	// 	daysCount.textContent = '0'
+	// 	hoursCount.textContent = '0'
+	// 	minutesCount.textContent = '0'
+	// }
 }, 1000)
 
 // const timeLeft = targetDate.getTime() - currentDate.getTime();
