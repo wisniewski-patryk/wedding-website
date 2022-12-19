@@ -56,6 +56,16 @@ const interval = setInterval(() => {
 	}
 }, 1000)
 
+// const timeLeft = targetDate.getTime() - currentDate.getTime();
+
+// const minutes = Math.floor(timeLeft / 1000 / 60);
+// const hours = Math.floor(timeLeft / (1000 * 60 * 60));
+// const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+
+// daysCount.textContent = days;
+// hoursCount.textContent = hours % 24;
+// minutesCount.textContent = minutes % 60;
+
 const actions = {
 	home: {
 		removeClass: [header, nav],
