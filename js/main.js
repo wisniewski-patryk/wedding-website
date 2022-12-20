@@ -47,24 +47,7 @@ const interval = setInterval(() => {
 	daysCount.textContent = days
 	hoursCount.textContent = hours
 	minutesCount.textContent = minutes
-
-	// if (timeLeft < 0) {
-	// 	clearInterval(interval)
-	// 	daysCount.textContent = '0'
-	// 	hoursCount.textContent = '0'
-	// 	minutesCount.textContent = '0'
-	// }
 }, 1000)
-
-// const timeLeft = targetDate.getTime() - currentDate.getTime();
-
-// const minutes = Math.floor(timeLeft / 1000 / 60);
-// const hours = Math.floor(timeLeft / (1000 * 60 * 60));
-// const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-
-// daysCount.textContent = days;
-// hoursCount.textContent = hours % 24;
-// minutesCount.textContent = minutes % 60;
 
 const actions = {
 	home: {
