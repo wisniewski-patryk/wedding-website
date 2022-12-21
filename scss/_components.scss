@@ -1,13 +1,14 @@
 .wrapper {
 	margin: 0 auto;
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1200px; 
 }
 
 .section-heading {
 	position: relative;
 	font-family: 'Petit Formal Script', cursive;
 	margin-bottom: 2em;
+	color: $pure-white;
 	font-size: 3rem;
 	font-weight: 300;
 	// text-transform: uppercase;

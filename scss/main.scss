@@ -43,6 +43,7 @@ body {
 	}
 
 	&:hover {
+
 		.burger-btn__bars::after,
 		.burger-btn__bars::before {
 			width: 100%;
@@ -63,6 +64,7 @@ body {
 
 	&__bars {
 		width: 100%;
+
 		&::after {
 			top: 13px;
 			width: 60%;
@@ -128,9 +130,11 @@ body {
 
 .header {
 	@include heroImages('../img/oip-alinalukaszewskafotografia-25.JPG');
+
 	&--disable {
 		display: none;
 	}
+
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -153,6 +157,7 @@ body {
 
 	&__timer {
 		margin-top: 300px;
+
 		&__body {
 			font-family: 'Petit Formal Script', cursive;
 			display: flex;
@@ -178,14 +183,17 @@ body {
 				display: flex;
 				justify-content: space-evenly;
 				width: 100%;
+
 				.card {
 					display: flex;
 					flex-direction: column;
 					text-align: center;
+
 					.number {
 						margin-bottom: 10px;
 						font-size: 2.5rem;
 					}
+
 					&__title {
 						font-size: 2.5rem;
 					}
@@ -214,6 +222,8 @@ body {
 	animation: navItemsAnimation 1s both;
 }
 
+////// KONTAKT ////////
+
 .contact {
 	&--disable {
 		display: none;
@@ -229,13 +239,31 @@ body {
 				transition: 0.2s;
 			}
 		}
+
+		&--tittle {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			margin: 1em 0 0.5em 0;
+		}
+
+		&--text {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			align-items: flex-start;
+		}
 	}
 }
+
+////// INFO ////////
 
 .info {
 	&--disable {
 		display: none;
 	}
+
 	&__box {
 		&--icons {
 			height: 100px;
@@ -243,51 +271,102 @@ body {
 			margin: 20px auto;
 			padding: 20px 0 0 0;
 		}
+
+		&--tittle {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			margin: 1em 0 0.5em 0;
+		}
+
+		&--text {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			align-items: flex-start;
+		}
+
 	}
 }
+
+////// PLAN ////////
+
 .plan {
+	&__box {
+		&--text {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			align-items: flex-start;
+		}
+	}
+
 	&--disable {
 		display: none;
 	}
 }
+
+////// MENU ////////
+
 .menu {
+	&__box {
+		&--text {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			align-items: flex-start;
+		}
+	}
+
 	&--disable {
 		display: none;
 	}
 }
+
+////// ZDJĘCIA ////////
+
 .photos {
+	&__box {
+		&--text {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			align-items: flex-start;
+		}
+	}
+
 	&--disable {
 		display: none;
 	}
 }
+
+////// MAPA /////////
 
 .map {
 	&--disable {
 		display: none;
 	}
+
 	&__box {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
 		iframe {
 			border: 0;
 			width: 100%;
 			height: 450px;
 		}
-	}
-}
 
-.tittle {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	margin: 1em 0 0.5em 0;
-}
-.text {
-	display: flex;
-	justify-content: center;
-	text-align: center;
+		&--link {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			align-items: flex-start;
+			margin-top: 50px;
+		}
+	}
 }
 
 li {
@@ -298,6 +377,10 @@ li {
 	display: none;
 }
 
+.active-section {
+	color: #dc6327;
+}
+
 ////// MEDIA /////
 
 @media (min-width: 576px) {
@@ -305,9 +388,11 @@ li {
 		&__heading {
 			font-size: 4rem;
 		}
+
 		img {
 			height: 300px;
 		}
+
 		&__timer {
 			&__body {
 				width: 100vw;
@@ -324,6 +409,7 @@ li {
 						.number {
 							font-size: 3.5rem;
 						}
+
 						&__title {
 							font-size: 3.5rem;
 						}
@@ -357,9 +443,11 @@ li {
 		&__heading {
 			font-size: 6rem;
 		}
+
 		&__img {
 			height: 420px;
 		}
+
 		&__timer {
 			&__body {
 				width: 70vw;
@@ -376,6 +464,7 @@ li {
 						.number {
 							font-size: 4.5rem;
 						}
+
 						&__title {
 							font-size: 4.5rem;
 						}
@@ -412,22 +501,26 @@ li {
 	.burger-btn {
 		display: none;
 	}
+
 	.nav-mobile {
 		display: none;
 	}
+
 	.nav {
 		height: 0;
 		background-image: none;
 		transform: translateX(0%);
+
 		&__item {
 			display: inline-block;
-			font-size: 1.8rem;
+			font-size: 1.6rem;
 
 			&:hover::before {
 				transform: scale(1);
 			}
 		}
 	}
+
 	.nav-desktop {
 		justify-content: flex-end;
 		align-items: flex-start;
@@ -449,7 +542,7 @@ li {
 @media (min-width: 1200px) {
 	.nav {
 		&__item {
-			font-size: 2.2rem;
+			font-size: 1.9rem;
 		}
 	}
 
@@ -457,6 +550,7 @@ li {
 		&--disable {
 			display: none;
 		}
+
 		position: relative;
 		display: flex;
 		justify-content: center;
@@ -491,12 +585,21 @@ li {
 						.number {
 							font-size: 4.5rem;
 						}
+
 						&__title {
 							font-size: 4.5rem;
 						}
 					}
 				}
 			}
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	.nav {
+		&__item {
+			font-size: 2.2rem;
 		}
 	}
 }

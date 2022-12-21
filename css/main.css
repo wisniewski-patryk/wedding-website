@@ -8,6 +8,7 @@
   position: relative;
   font-family: "Petit Formal Script", cursive;
   margin-bottom: 2em;
+  color: #99535b;
   font-size: 3rem;
   font-weight: 300;
   text-align: center;
@@ -248,6 +249,19 @@ body {
   transform: scale(1.3);
   transition: 0.2s;
 }
+.contact__box--tittle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 1em 0 0.5em 0;
+}
+.contact__box--text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: flex-start;
+}
 
 .info--disable {
   display: none;
@@ -258,15 +272,46 @@ body {
   margin: 20px auto;
   padding: 20px 0 0 0;
 }
+.info__box--tittle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 1em 0 0.5em 0;
+}
+.info__box--text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: flex-start;
+}
 
+.plan__box--text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: flex-start;
+}
 .plan--disable {
   display: none;
 }
 
+.menu__box--text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: flex-start;
+}
 .menu--disable {
   display: none;
 }
 
+.photos__box--text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: flex-start;
+}
 .photos--disable {
   display: none;
 }
@@ -284,19 +329,12 @@ body {
   width: 100%;
   height: 450px;
 }
-
-.tittle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 1em 0 0.5em 0;
-}
-
-.text {
+.map__box--link {
   display: flex;
   justify-content: center;
   text-align: center;
+  align-items: flex-start;
+  margin-top: 50px;
 }
 
 li {
@@ -305,6 +343,10 @@ li {
 
 .footer {
   display: none;
+}
+
+.active-section {
+  color: #dc6327;
 }
 
 @media (min-width: 576px) {
@@ -375,7 +417,7 @@ li {
   }
   .nav__item {
     display: inline-block;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .nav__item:hover::before {
     transform: scale(1);
@@ -395,7 +437,7 @@ li {
 }
 @media (min-width: 1200px) {
   .nav__item {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
   }
   .header {
     position: relative;
@@ -429,5 +471,10 @@ li {
   }
   .header__timer .time__section__cards .card__title {
     font-size: 4.5rem;
+  }
+}
+@media (min-width: 1400px) {
+  .nav__item {
+    font-size: 2.2rem;
   }
 }/*# sourceMappingURL=main.css.map */
