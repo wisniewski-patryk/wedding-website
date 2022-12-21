@@ -358,6 +358,14 @@ body {
 			width: 100%;
 			height: 450px;
 		}
+
+		&--link {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			align-items: flex-start;
+			margin-top: 50px;
+		}
 	}
 }
 
