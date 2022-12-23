@@ -445,6 +445,16 @@ li {
 .active-section {
   color: #dc6327;
 }
+.active-section::before {
+  transform: scale(0);
+  border: 3px solid #dc6327;
+  border-radius: 8px;
+  content: "";
+  transition: transform 0.3s;
+}
+.active-section:hover::before {
+  transform: scale(0);
+}
 
 @media (min-width: 576px) {
   .header__heading {
