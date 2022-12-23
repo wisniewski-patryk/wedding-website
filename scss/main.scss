@@ -438,6 +438,18 @@ li {
 
 .active-section {
 	color: #dc6327;
+		&::before {
+			transform: scale(0);
+			border: 3px solid #dc6327;
+			border-radius: 8px;
+			content: '';
+			transition: transform 0.3s;
+		}
+
+	&:hover::before {
+		transform: scale(0);
+	}
+	
 }
 
 ////// MEDIA /////
