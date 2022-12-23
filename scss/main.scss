@@ -337,7 +337,11 @@ body {
 			text-align: justify;
   			text-align: center;
 		}
-		&--animation {
+		&--animation {			
+			text-align: justify;
+			text-align: center;
+			margin:  20px 0 0 30px;
+			font-size: 4rem;
 			color: black;
 			animation: phoneAnimation 1s linear infinite both;
 		}
