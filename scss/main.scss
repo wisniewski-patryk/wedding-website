@@ -444,6 +444,8 @@ li {
 			border-radius: 8px;
 			content: '';
 			transition: transform 0.3s;
+			background-color: grey;
+			opacity: 0.2;
 		}
 
 	&:hover::before {
