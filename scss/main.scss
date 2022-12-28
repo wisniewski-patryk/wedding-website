@@ -129,7 +129,7 @@ body {
 // HEADER
 
 .header {
-	@include heroImages('../img/oip-alinalukaszewskafotografia-25.JPG');
+	@include heroImages('../img/oip-alinalukaszewskafotografia-25_smaller.JPG');
 
 	&--disable {
 		display: none;
