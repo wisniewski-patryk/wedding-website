@@ -20,7 +20,6 @@ html {
 }
 
 body {
-	// @include heroImages('../img/daniel-j-schwarz-YtY724tdl7Y-unsplash-croped.jpg');
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.6rem;
 }
@@ -129,7 +128,7 @@ body {
 // HEADER
 
 .header {
-	@include heroImages('../img/oip-alinalukaszewskafotografia-25.JPG');
+	@include heroImages('../img/oip-alinalukaszewskafotografia-25_smaller.JPG');
 
 	&--disable {
 		display: none;
@@ -633,7 +632,6 @@ li {
 		height: 100vh;
 		text-align: center;
 		color: #f6f8f7;
-		// @include heroImages('../img/daniel-j-schwarz-YtY724tdl7Y-unsplash-croped.jpg');
 		background-attachment: scroll;
 
 		&__heading {
