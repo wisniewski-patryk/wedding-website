@@ -17,10 +17,6 @@
 </head>
 
 <body>
-
-
-
-
   <header id="home" class="header section">
     <h1 class="header__heading">Pobieramy się!</h1>
     <div class="header__timer">
@@ -29,15 +25,15 @@
           <h3 class="time__section--title">za:</h3>
           <div class="time__section__cards">
             <div class="card">
-              <p class="days__count number"></p>
+              <p class="days number"></p>
               <p class="card__title">dni</p>
             </div>
             <div class="card">
-              <p class="hours__count number"></p>
+              <p class="hours number"></p>
               <p class="card__title">godzin</p>
             </div>
             <div class="card">
-              <p class="minutes__count number"></p>
+              <p class="minutes number"></p>
               <p class="card__title">minut</p>
             </div>
           </div>
@@ -58,6 +54,8 @@
       <a href="#QandA" class="nav__item QandABtn">Q&A</a>
       <a href="#weddingPlan" class="nav__item planBtn">Plan ślubu i wesela</a>
       <a href="#weddingMenu" class="nav__item menuBtn">Menu</a>
+      <a href="#placeWithMap" class="nav__item mapBtn">Mapa</a>
+      <a href="#contactToUs" class="nav__item contactBtn">Kontakt</a>
       <a href="#weddingPhotos" class="nav__item photosBtn">Zdjęcia i filmy</a>
     </div>
   </nav>
@@ -68,6 +66,8 @@
       <a href="#QandA" class="nav__item QandABtn">Q&A</a>
       <a href="#weddingPlan" class="nav__item planBtn">Plan ślubu i Wesela</a>
       <a href="#weddingMenu" class="nav__item menuBtn">Menu</a>
+      <a href="#placeWithMap" class="nav__item mapBtn">Mapa</a>
+      <a href="#contactToUs" class="nav__item contactBtn">Kontakt</a>
       <a href="#weddingPhotos" class="nav__item photosBtn">Zdjęcia i filmy</a>
     </div>
   </nav>
@@ -81,53 +81,51 @@
         <ol>
           <li>
             <img class="info__box--icons" src="./img/icons/federal-palace-of-switzerland.png">
-            <h3 class="tittle">Gdzie odbędzie się ceremonia zaślubin?</h3>
-            <p class="text">Ceremonia odbędzie się w ogrodzie sali weselnej Nowa Holandia przy obwodnicy Elbląga.</p>
+            <h3 class="info__box--tittle">Gdzie odbędzie się ceremonia zaślubin?</h3>
+            <p class="info__box--text">Ceremonia odbędzie się w ogrodzie sali weselnej Nowa Holandia przy obwodnicy
+              Elbląga.</p>
           </li>
           <li class="info__box--list">
             <img class="info__box--icons" src="./img/icons/tracking.png">
-            <h3 class="tittle">Jak dojechać do sali?</h3>
-            <p class="text">Obwodnicą Elbląga, zjazd z S7 przy stacji benzynowej SHELL. W mapach Google wpiszcie "Nowa
-              Holandia" - bez trudu dojedziecie na miejsce :)</p>
+            <h3 class="info__box--tittle">Jak dojechać do sali?</h3>
+            <p class="info__box--text">Obwodnicą Elbląga, zjazd z S7 przy stacji benzynowej SHELL. W mapach Google
+              wpiszcie "Nowa Holandia" - bez trudu dojedziecie na miejsce :)</p>
           </li>
           <li class="info__box--list">
             <img class="info__box--icons" src="./img/icons/parking.png">
-            <h3 class="tittle">Czy przy sali dostępny jest parking?</h3>
-            <p class="text">Tak - bezpośrednio przed głównym wejściem do sali znajduje się bezpłatny parking
+            <h3 class="info__box--tittle">Czy przy sali dostępny jest parking?</h3>
+            <p class="info__box--text">Tak - bezpośrednio przed głównym wejściem do sali znajduje się bezpłatny parking
               samochodowy.</p>
           </li>
           <li class="info__box--list">
             <img class="info__box--icons" src="./img/icons/rainy.png">
-            <h3 class="tittle">Co jeżeli będzie padać?</h3>
-            <p class="text">Mamy nadzieję, że nie będzie! Na wszelki wypadek mamy jednak przewidziany plan B i w razie
-              potrzeby ceremonia zostanie przeniesiona pod zadaszenie przy sali. Samo wesele zaplanowane jest wewnątrz
-              restauracji - bez względu na pogodę.</p>
+            <h3 class="info__box--tittle">Co jeżeli będzie padać?</h3>
+            <p class="info__box--text">Mamy nadzieję, że nie będzie! Na wszelki wypadek mamy jednak przewidziany plan B
+              i w razie potrzeby ceremonia zostanie przeniesiona pod zadaszenie przy sali. Samo wesele zaplanowane jest
+              wewnątrz restauracji - bez względu na pogodę.</p>
           </li>
           <li class="info__box--list">
             <img class="info__box--icons" src="./img/icons/rocking-horse.png">
-            <h3 class="tittle">Na zaproszeniu nie wymieniono moich dzieci, czy to pomyłka?</h3>
-            <p class="text">Nie. Wspólnie zadecydowaliśmy, że z uwagi na charakter imprezy (wszechobecny alkohol i późną
-              porę) nie
-              będzie to odpowiednie miejsce dla dzieci. Dlatego zaprosiliśmy wyłącznie bliskie nam osoby powyżej 16 r.ż.
-              Mamy nadzieję, że rozumiecie naszą decyzję.</p>
+            <h3 class="info__box--tittle">Na zaproszeniu nie wymieniono moich dzieci, czy to pomyłka?</h3>
+            <p class="info__box--text">Nie. Wspólnie zadecydowaliśmy, że z uwagi na charakter imprezy (wszechobecny
+              alkohol i późną porę) nie będzie to odpowiednie miejsce dla dzieci. Dlatego zaprosiliśmy wyłącznie bliskie
+              nam osoby powyżej 16 r.ż. Mamy nadzieję, że rozumiecie naszą decyzję.</p>
           </li>
           <li class="info__box--list">
             <img class="info__box--icons" src="./img/icons/salad.png">
-            <h3 class="tittle">Co jeśli nie jem mięsa?</h3>
-            <p class="text">Żaden problem - jeśli jesteście wegetarianami to prosimy abyście dali nam znać o swoich
-              preferencjach
-              przy potwierdzaniu obecności. Informacje zostaną przekazane do restauracji, która weźmie pod uwagę waszą
-              dietę. Prosimy jednak, by z tej opcji korzystały wyłącznie osoby praktykujące wegetarianizm na co dzień,
-              gdyż serwowane posiłki są ustalane z salą na około dwa miesiące przed datą ślubu i po tym czasie nie ma
-              możliwości ich zmiany.</p>
+            <h3 class="info__box--tittle">Co jeśli nie jem mięsa?</h3>
+            <p class="info__box--text">Żaden problem - jeśli jesteście wegetarianami to prosimy abyście dali nam znać o
+              swoich preferencjach przy potwierdzaniu obecności. Informacje zostaną przekazane do restauracji, która
+              weźmie pod uwagę waszą dietę. Prosimy jednak, by z tej opcji korzystały wyłącznie osoby praktykujące
+              wegetarianizm na co dzień, gdyż serwowane posiłki są ustalane z salą na około dwa miesiące przed datą
+              ślubu i po tym czasie nie ma możliwości ich zmiany.</p>
           </li>
           <li class="info__box--list">
             <img class="info__box--icons" src="./img/icons/taxi.png">
-            <h3 class="tittle">Jak po weselu wrócić do domu/hotelu?</h3>
-            <p class="text">Najkorzystniej będzie zamówić taksówkę z TeleTaxi (tel. 55 233 24 44). Sala, w której
-              odbędzie się wesele
-              ma z nimi podpisaną umowę o niewłączaniu strefy pozamiastowej, dzięki czemu cena za dojazd powinna być
-              niższa niż u pozostałych firm taksówkarskich.</p>
+            <h3 class="info__box--tittle">Jak po weselu wrócić do domu/hotelu?</h3>
+            <p class="info__box--text">Najkorzystniej będzie zamówić taksówkę z TeleTaxi. Sala, w której odbędzie się wesele ma z nimi podpisaną umowę o niewłączaniu strefy
+              pozamiastowej, dzięki czemu cena za dojazd powinna być niższa niż u pozostałych firm taksówkarskich.</p>
+              <p class="info__box--text">TeleTaxi (tel. 55 233 24 44)<a href="tel:552332444"><i class="fa-solid fa-phone info__box--animation"></i></a></p>
           </li>
         </ol>
       </div>
@@ -139,24 +137,25 @@
     <div class="wrapper">
       <div class="contact__box">
         <h2 class="section-heading">kontakt</h2>
-        <p class="text">W razie potrzeby prosimy kontaktować się z poniższymi osobami. </p>
+        <p class="contact__box--text">W razie potrzeby prosimy kontaktować się z poniższymi osobami. </p>
         <ol>
           <li>
-            <h3 class="tittle">Aleksandra</h3>
+            <h3 class="contact__box--tittle">Aleksandra <a href="#"><img class="contact__box--icons"
+                  src="./img/icons/messager-removebg-preview.png"></a></h3>
           </li>
           <li>
-            <h3 class="tittle">Patryk</h3>
+            <h3 class="contact__box--tittle">Patryk <a href="#"><img class="contact__box--icons"
+                  src="./img/icons/messager-removebg-preview.png"></a></h3>
           </li>
           <li>
-            <h3 class="tittle">Klaudia Ciepłucha - świadkowa</h3>
-            <!-- <h3 class="tittle">Klaudia Lewandowska - świadkowa</h3> w marcu będę musiał podmienić nazwisko xD to sobie juz placeholdera zrobiłem ;)  -->
+            <h3 class="contact__box--tittle">Klaudia Ciepłucha - świadkowa Oli<a href="#"><img
+                  class="contact__box--icons" src="./img/icons/messager-removebg-preview.png"></a></h3>
+            <!-- Klaudia Lewandowska - świadkowa-  w marcu będę musiał podmienić nazwisko xD to sobie juz placeholdera zrobiłem ;)  -->
           </li>
           <li>
-            <h3 class="tittle">Mariusz Wiśniewski - świadek</h3>
+            <h3 class="contact__box--tittle">Mariusz Wiśniewski - świadek Patryka<a href="#"><img
+                  class="contact__box--icons" src="./img/icons/messager-removebg-preview.png"></a></h3>
           </li>
-          <!-- <li>
-            <h3 class="tittle">Basia Tomczyk- wsparcie</h3>
-          </li> -->
         </ol>
       </div>
     </div>
@@ -170,6 +169,9 @@
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2337.4599381008347!2d19.414231016137602!3d54.136497880152234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd4ce288cd6139%3A0xb16e7886925213f1!2sNowa%20Holandia!5e0!3m2!1sen!2spl!4v1665783352748!5m2!1sen!2spl"
           allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
+      <a class="map__box--link"
+        href="https://www.google.com/maps/search/?api=1&query=Nowa+Holandia+-+Grill+Bar+i+Restauracja" target="_blank"
+        rel="noopener noreferrer">LINK DO MAPY</a>
     </div>
   </section>
 
@@ -177,7 +179,7 @@
     <div class="wrapper">
       <h2 class="section-heading">plan wesela</h2>
       <div class="plan__box">
-        <p class="text">w tym miejscu będzie plan wesela :)</p>
+        <p class="plan__box--text">w tym miejscu będzie plan wesela :)</p>
       </div>
     </div>
   </section>
@@ -186,7 +188,7 @@
     <div class="wrapper">
       <h2 class="section-heading">menu weselne</h2>
       <div class="menu__box">
-        <p class="text">w tym miejscu będzie menu weselne :)</p>
+        <p class="menu__box--text">w tym miejscu będzie menu weselne :)</p>
       </div>
     </div>
   </section>
@@ -195,7 +197,7 @@
     <div class="wrapper">
       <h2 class="section-heading">zdjęcia</h2>
       <div class="photos__box">
-        <p class="text">w tym miejscu będą zdjęcia :)</p>
+        <p class="photos__box--text">w tym miejscu będą zdjęcia :)</p>
       </div>
     </div>
 

@@ -20,7 +20,6 @@ html {
 }
 
 body {
-	// @include heroImages('../img/daniel-j-schwarz-YtY724tdl7Y-unsplash-croped.jpg');
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.6rem;
 }
@@ -43,6 +42,7 @@ body {
 	}
 
 	&:hover {
+
 		.burger-btn__bars::after,
 		.burger-btn__bars::before {
 			width: 100%;
@@ -63,6 +63,7 @@ body {
 
 	&__bars {
 		width: 100%;
+
 		&::after {
 			top: 13px;
 			width: 60%;
@@ -127,10 +128,12 @@ body {
 // HEADER
 
 .header {
-	@include heroImages('../img/oip-alinalukaszewskafotografia-25.JPG');
+	@include heroImages('../img/oip-alinalukaszewskafotografia-25_smaller.JPG');
+
 	&--disable {
 		display: none;
 	}
+
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -153,6 +156,7 @@ body {
 
 	&__timer {
 		margin-top: 300px;
+
 		&__body {
 			font-family: 'Petit Formal Script', cursive;
 			display: flex;
@@ -178,14 +182,17 @@ body {
 				display: flex;
 				justify-content: space-evenly;
 				width: 100%;
+
 				.card {
 					display: flex;
 					flex-direction: column;
 					text-align: center;
+
 					.number {
 						margin-bottom: 10px;
 						font-size: 2.5rem;
 					}
+
 					&__title {
 						font-size: 2.5rem;
 					}
@@ -210,20 +217,99 @@ body {
 	}
 }
 
+@keyframes phoneAnimation {
+	0% {
+		scale: 1;
+		transform: rotate(0deg);
+	}
+	10% {
+		scale: 1,1;
+		transform: rotate(10deg);
+	}
+	20% {
+		scale: 1.2;
+		transform: rotate(30deg);
+	}
+	30% {
+		scale: 1.3;
+		transform: rotate(10deg);
+	}
+	40% {
+		scale: 1,4;
+		transform: rotate(-10deg);
+	}
+	50% {
+		scale: 1.5;
+		transform: rotate(10deg);
+	}
+	60% {
+		scale: 1.4;
+		transform: rotate(0deg);
+	}
+	70% {
+		scale: 1.3;
+		transform: rotate(-10deg);
+	}
+	80% {
+		scale: 1.2;
+		transform: rotate(-20deg);
+	}
+	90% {
+		scale: 1.1;
+		transform: rotate(-10deg);
+	}
+	100% {
+		scale: 1;
+		transform: rotate(0deg);
+	}
+}
+
 .nav-items-animation {
 	animation: navItemsAnimation 1s both;
 }
+
+////// KONTAKT ////////
 
 .contact {
 	&--disable {
 		display: none;
 	}
+
+	&__box {
+		&--icons {
+			height: 40px;
+			display: inline;
+
+			&:hover {
+				transform: scale(1.3);
+				transition: 0.2s;
+			}
+		}
+
+		&--tittle {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			margin: 1em 0 0.5em 0;
+		}
+
+		&--text {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			align-items: flex-start;
+		}
+	}
 }
+
+////// INFO ////////
 
 .info {
 	&--disable {
 		display: none;
 	}
+
 	&__box {
 		&--icons {
 			height: 100px;
@@ -231,75 +317,106 @@ body {
 			margin: 20px auto;
 			padding: 20px 0 0 0;
 		}
+
+		&--tittle {
+			text-align: justify;
+			text-align: center;
+			margin: 1em 0 0.5em 0;
+		}
+
+		&--text {
+			text-align: justify;
+  			text-align: center;
+		}
+		&--animation {			
+			text-align: justify;
+			text-align: center;
+			margin:  20px 0 0 30px;
+			color: green;
+			font-size: 4rem;
+			animation: phoneAnimation 1s linear infinite both;
+		}
+
 	}
 }
+
+////// PLAN ////////
+
 .plan {
+	&__box {
+		&--text {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			align-items: flex-start;
+		}
+	}
+
 	&--disable {
 		display: none;
 	}
-	&__box {
-		&--icons {
-			height: 100px;
-			display: block;
-			margin: 20px auto;
-			padding: 20px 0 0 0;
-		}
-	}
 }
+
+////// MENU ////////
+
 .menu {
+	&__box {
+		&--text {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			align-items: flex-start;
+		}
+	}
+
 	&--disable {
 		display: none;
 	}
-	&__box {
-		&--icons {
-			height: 100px;
-			display: block;
-			margin: 20px auto;
-			padding: 20px 0 0 0;
-		}
-	}
 }
+
+////// ZDJĘCIA ////////
+
 .photos {
+	&__box {
+		&--text {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			align-items: flex-start;
+		}
+	}
+
 	&--disable {
 		display: none;
 	}
-	&__box {
-		&--icons {
-			height: 100px;
-			display: block;
-			margin: 20px auto;
-			padding: 20px 0 0 0;
-		}
-	}
 }
+
+////// MAPA /////////
 
 .map {
 	&--disable {
 		display: none;
 	}
+
 	&__box {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
 		iframe {
 			border: 0;
 			width: 100%;
 			height: 450px;
 		}
-	}
-}
 
-.tittle {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	margin: 1em 0 0.5em 0;
-}
-.text {
-	display: flex;
-	justify-content: center;
-	text-align: center;
+		&--link {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			align-items: flex-start;
+			margin-top: 50px;
+		}
+	}
 }
 
 li {
@@ -310,6 +427,24 @@ li {
 	display: none;
 }
 
+.active-section {
+	color: #dc6327;
+		&::before {
+			transform: scale(0);
+			border: 3px solid #dc6327;
+			border-radius: 8px;
+			content: '';
+			transition: transform 0.3s;
+			background-color: grey;
+			opacity: 0.2;
+		}
+
+	&:hover::before {
+		transform: scale(0);
+	}
+	
+}
+
 ////// MEDIA /////
 
 @media (min-width: 576px) {
@@ -317,9 +452,11 @@ li {
 		&__heading {
 			font-size: 4rem;
 		}
+
 		img {
 			height: 300px;
 		}
+
 		&__timer {
 			&__body {
 				width: 100vw;
@@ -336,6 +473,7 @@ li {
 						.number {
 							font-size: 3.5rem;
 						}
+
 						&__title {
 							font-size: 3.5rem;
 						}
@@ -369,9 +507,11 @@ li {
 		&__heading {
 			font-size: 6rem;
 		}
+
 		&__img {
 			height: 420px;
 		}
+
 		&__timer {
 			&__body {
 				width: 70vw;
@@ -388,6 +528,7 @@ li {
 						.number {
 							font-size: 4.5rem;
 						}
+
 						&__title {
 							font-size: 4.5rem;
 						}
@@ -424,21 +565,26 @@ li {
 	.burger-btn {
 		display: none;
 	}
+
 	.nav-mobile {
 		display: none;
 	}
+
 	.nav {
+		height: 0;
 		background-image: none;
 		transform: translateX(0%);
+
 		&__item {
 			display: inline-block;
-			font-size: 1.8rem;
+			font-size: 1.6rem;
 
 			&:hover::before {
 				transform: scale(1);
 			}
 		}
 	}
+
 	.nav-desktop {
 		justify-content: flex-end;
 		align-items: flex-start;
@@ -460,7 +606,7 @@ li {
 @media (min-width: 1200px) {
 	.nav {
 		&__item {
-			font-size: 2.2rem;
+			font-size: 1.9rem;
 		}
 	}
 
@@ -468,6 +614,7 @@ li {
 		&--disable {
 			display: none;
 		}
+
 		position: relative;
 		display: flex;
 		justify-content: center;
@@ -477,7 +624,6 @@ li {
 		height: 100vh;
 		text-align: center;
 		color: #f6f8f7;
-		// @include heroImages('../img/daniel-j-schwarz-YtY724tdl7Y-unsplash-croped.jpg');
 		background-attachment: scroll;
 
 		&__heading {
@@ -502,12 +648,21 @@ li {
 						.number {
 							font-size: 4.5rem;
 						}
+
 						&__title {
 							font-size: 4.5rem;
 						}
 					}
 				}
 			}
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	.nav {
+		&__item {
+			font-size: 2.2rem;
 		}
 	}
 }
