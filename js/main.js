@@ -55,8 +55,8 @@ const interval = setInterval(() => {
 	}
 
 	const timeLeft = targetDate - currentDate
-	const hoursLeft = Math.ceil((targetDate - currentDate) / 1000 / 60 / 60);
-	const daysLeft = Math.ceil((targetDate - currentDate) / 1000 / 60 / 60 / 24);
+	const hoursLeft = Math.floor(timeLeft / 1000 / 60 / 60);
+	const daysLeft = Math.floor(timeLeft / 1000 / 60 / 60 / 24);
 
 	if (hoursLeft <= 3 || daysLeft <= 0) {
 		if (!lastMapAdditionTime || currentDate - lastMapAdditionTime >= 1000 * 60 * 60) {
