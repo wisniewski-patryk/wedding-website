@@ -37,7 +37,7 @@ const handleNavItemsAnimation = () => {
 	})
 }
 
-const targetDate = new Date('2023-09-15T16:00:00.000Z')
+const targetDate = new Date('2023-09-15T16:00:00.000+0100')
 // const targetDate = new Date('2022-12-29T10:50:00.000Z')
 
 let lastMapAdditionTime = null
@@ -74,7 +74,6 @@ const interval = setInterval(() => {
 	minutesCount.textContent = minutes
 
 }, 1000)
-
 
 const actions = {
 	home: {
