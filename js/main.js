@@ -37,7 +37,7 @@ const handleNavItemsAnimation = () => {
 	})
 }
 
-const targetDate = new Date('2023-09-15T16:00:00.000Z')
+const targetDate = new Date('2023-09-15T16:00:00.000+0100')
 // const targetDate = new Date('2022-12-29T10:50:00.000Z')
 
 let lastMapAdditionTime = null
@@ -55,8 +55,8 @@ const interval = setInterval(() => {
 	}
 
 	const timeLeft = targetDate - currentDate
-	const hoursLeft = Math.ceil((targetDate - currentDate) / 1000 / 60 / 60);
-	const daysLeft = Math.ceil((targetDate - currentDate) / 1000 / 60 / 60 / 24);
+	const hoursLeft = Math.floor(timeLeft / 1000 / 60 / 60);
+	const daysLeft = Math.floor(timeLeft / 1000 / 60 / 60 / 24);
 
 	if (hoursLeft <= 3 || daysLeft <= 0) {
 		if (!lastMapAdditionTime || currentDate - lastMapAdditionTime >= 1000 * 60 * 60) {
@@ -74,7 +74,6 @@ const interval = setInterval(() => {
 	minutesCount.textContent = minutes
 
 }, 1000)
-
 
 const actions = {
 	home: {
