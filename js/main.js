@@ -17,6 +17,9 @@ const mapBtn = document.querySelectorAll('.mapBtn')
 const contactBtn = document.querySelectorAll('.contactBtn')
 const sections = document.querySelectorAll('.nav__item')
 const mapElement = document.querySelector('.addMap')
+const timeTitle = document.querySelector('.time__section--title')
+const timeNumber = document.querySelector('.time__section--number')
+const cards = document.querySelectorAll('.card')
 
 const handleNav = () => {
 	nav.classList.toggle('nav--disable')
@@ -35,7 +38,7 @@ const handleNavItemsAnimation = () => {
 }
 
 const targetDate = new Date('2023-09-15T16:00:00.000Z')
-// const targetDate = new Date('2022-12-29T12:00:00.000Z')
+// const targetDate = new Date('2022-12-29T10:50:00.000Z')
 
 let lastMapAdditionTime = null
 
@@ -44,6 +47,10 @@ const interval = setInterval(() => {
 
 	if (currentDate >= targetDate) {
 		clearInterval(interval)
+		timeTitle.remove()
+		timeNumber.style.display = 'block';
+		mapElement.innerHTML = '<div class="map__box"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2337.4599381008347!2d19.414231016137602!3d54.136497880152234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd4ce288cd6139%3A0xb16e7886925213f1!2sNowa%20Holandia!5e0!3m2!1sen!2spl!4v1665783352748!5m2!1sen!2spl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>'
+		cards.forEach(card => card.remove());
 		return
 	}
 
@@ -56,14 +63,15 @@ const interval = setInterval(() => {
 			lastMapAdditionTime = currentDate
 		}
 	}
-
+	
 	const minutes = Math.floor((timeLeft / 1000 / 60) % 60)
 	const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24)
 	const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24))
-
+	
 	daysCount.textContent = days
 	hoursCount.textContent = hours
 	minutesCount.textContent = minutes
+
 }, 1000)
 
 
