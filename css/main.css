@@ -193,6 +193,11 @@ body {
   font-weight: normal;
   font-size: 2.5rem;
 }
+.header__timer .time__section--number {
+  font-family: "Dancing Script", cursive;
+  font-size: 5rem;
+  display: none;
+}
 .header__timer .time__section__cards {
   display: flex;
   justify-content: space-evenly;
