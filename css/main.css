@@ -144,7 +144,7 @@ body {
 }
 
 .header {
-  background-image: url("../img/oip-alinalukaszewskafotografia-25_smaller.JPG");
+  background-image: url("../img/oip-alinalukaszewskafotografia-25-tinypng.png");
   background-size: cover;
   background-position: center;
   background-position-x: 70%;
@@ -195,7 +195,7 @@ body {
 }
 .header__timer .time__section--number {
   font-family: "Dancing Script", cursive;
-  font-size: 5rem;
+  font-size: 2.5rem;
   display: none;
 }
 .header__timer .time__section__cards {
@@ -477,6 +477,9 @@ li {
   .header__timer .time__section--title {
     font-size: 3.5rem;
   }
+  .header__timer .time__section--number {
+    font-size: 3.8rem;
+  }
   .header__timer .time__section__cards .card .number {
     font-size: 3.5rem;
   }
@@ -503,6 +506,9 @@ li {
   }
   .header__timer .time__section--title {
     font-size: 4.5rem;
+  }
+  .header__timer .time__section--number {
+    font-size: 4.4rem;
   }
   .header__timer .time__section__cards .card .number {
     font-size: 4.5rem;
@@ -547,6 +553,22 @@ li {
   .header__heading {
     font-size: 8rem;
     top: 10%;
+  }
+  .header__timer__body {
+    width: 70vw;
+    height: 250px;
+  }
+  .header__timer .time__section--title {
+    font-size: 4.5rem;
+  }
+  .header__timer .time__section--number {
+    font-size: 5rem;
+  }
+  .header__timer .time__section__cards .card .number {
+    font-size: 4.5rem;
+  }
+  .header__timer .time__section__cards .card__title {
+    font-size: 4.5rem;
   }
 }
 @media (min-width: 1200px) {
