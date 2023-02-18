@@ -179,7 +179,7 @@ body {
 			}
 			&--number {
 				font-family: 'Dancing Script', cursive;
-				font-size: 5rem;
+				font-size: 2.5rem;
 				display: none;
 			}
 
@@ -474,6 +474,10 @@ li {
 					font-size: 3.5rem;
 				}
 
+				&--number {
+					font-size: 3.8rem;
+				}
+
 				&__cards {
 					.card {
 						.number {
@@ -527,6 +531,9 @@ li {
 			.time__section {
 				&--title {
 					font-size: 4.5rem;
+				}
+				&--number {
+					font-size: 4.4rem;
 				}
 
 				&__cards {
@@ -605,6 +612,33 @@ li {
 		&__heading {
 			font-size: 8rem;
 			top: 10%;
+		}
+		&__timer {
+			&__body {
+				width: 70vw;
+				height: 250px;
+			}
+
+			.time__section {
+				&--title {
+					font-size: 4.5rem;
+				}
+				&--number {
+					font-size: 5rem;
+				}
+
+				&__cards {
+					.card {
+						.number {
+							font-size: 4.5rem;
+						}
+
+						&__title {
+							font-size: 4.5rem;
+						}
+					}
+				}
+			}
 		}
 	}
 }
