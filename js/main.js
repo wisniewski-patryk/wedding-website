@@ -37,7 +37,7 @@ const handleNavItemsAnimation = () => {
 	})
 }
 
-const targetDate = new Date('2023-09-15T16:30:00.000+0000')
+const targetDate = new Date('2023-09-15T16:30:00.000+0200')
 
 let lastMapAdditionTime = null
 
