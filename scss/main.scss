@@ -42,7 +42,6 @@ body {
 	}
 
 	&:hover {
-
 		.burger-btn__bars::after,
 		.burger-btn__bars::before {
 			width: 100%;
@@ -342,7 +341,6 @@ body {
 			font-size: 4rem;
 			animation: phoneAnimation 1s linear infinite both;
 		}
-
 	}
 }
 
@@ -422,7 +420,6 @@ body {
 			align-items: flex-start;
 			margin-top: 50px;
 		}
-	}
 }
 
 li {
@@ -448,7 +445,6 @@ li {
 	&:hover::before {
 		transform: scale(0);
 	}
-	
 }
 
 ////// MEDIA /////
