@@ -227,7 +227,7 @@ body {
 		transform: rotate(0deg);
 	}
 	10% {
-		scale: 1,1;
+		scale: 1, 1;
 		transform: rotate(10deg);
 	}
 	20% {
@@ -239,7 +239,7 @@ body {
 		transform: rotate(10deg);
 	}
 	40% {
-		scale: 1,4;
+		scale: 1, 4;
 		transform: rotate(-10deg);
 	}
 	50% {
@@ -288,7 +288,7 @@ body {
 				transform: scale(1.3);
 				transition: 0.2s;
 			}
-		} 	
+		}
 
 		&--tittle {
 			display: flex;
@@ -331,12 +331,12 @@ body {
 
 		&--text {
 			text-align: justify;
-  			text-align: center;
+			text-align: center;
 		}
-		&--animation {			
+		&--animation {
 			text-align: justify;
 			text-align: center;
-			margin:  20px 0 0 30px;
+			margin: 20px 0 0 30px;
 			color: green;
 			font-size: 4rem;
 			animation: phoneAnimation 1s linear infinite both;
@@ -388,6 +388,24 @@ body {
 			text-align: center;
 			align-items: flex-start;
 		}
+		&__button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: auto;
+			margin-top: 50px;
+			padding: 10px 20px;
+			background-color: #cf46cb;
+			color: white;
+			text-decoration: none;
+			border-radius: 4px;
+			font-size: 16px;
+			cursor: pointer;
+			&:hover {
+				background-color: rgba(207, 70, 203, 0.7);
+				transition: 0.3s;
+			}
+		}
 	}
 
 	&--disable {
@@ -412,14 +430,26 @@ body {
 			width: 100%;
 			height: 450px;
 		}
-
+	}
+	&__button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+		margin-top: 50px;
 		&--link {
-			display: flex;
-			justify-content: center;
-			text-align: center;
-			align-items: flex-start;
-			margin-top: 50px;
+			padding: 10px 20px;
+			background-color: #cf46cb;
+			color: white;
+			text-decoration: none;
+			border-radius: 4px;
+			font-size: 16px;
+			&:hover {
+				background-color: rgba(207, 70, 203, 0.7);
+				transition: 0.3s;
+			}
 		}
+	}
 }
 
 li {
@@ -432,15 +462,15 @@ li {
 
 .active-section {
 	color: #dc6327;
-		&::before {
-			transform: scale(0);
-			border: 3px solid #dc6327;
-			border-radius: 8px;
-			content: '';
-			transition: transform 0.3s;
-			background-color: grey;
-			opacity: 0.2;
-		}
+	&::before {
+		transform: scale(0);
+		border: 3px solid #dc6327;
+		border-radius: 8px;
+		content: '';
+		transition: transform 0.3s;
+		background-color: grey;
+		opacity: 0.2;
+	}
 
 	&:hover::before {
 		transform: scale(0);
@@ -565,6 +595,12 @@ li {
 		&__box {
 			iframe {
 				width: 600px;
+			}
+
+			&__button {
+				&:hover {
+					background-color: #fff;
+				}
 			}
 		}
 	}
