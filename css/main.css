@@ -372,6 +372,10 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
+.photos__box__button--link {
+  color: white;
+  text-decoration: none;
+}
 .photos__box__button:hover {
   background-color: rgba(207, 70, 203, 0.7);
   transition: 0.3s;

@@ -401,6 +401,10 @@ body {
 			border-radius: 4px;
 			font-size: 16px;
 			cursor: pointer;
+			&--link {
+				color: white;
+				text-decoration: none;
+			}
 			&:hover {
 				background-color: rgba(207, 70, 203, 0.7);
 				transition: 0.3s;
