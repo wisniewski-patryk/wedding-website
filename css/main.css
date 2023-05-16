@@ -509,9 +509,6 @@ li {
   .map__box iframe {
     width: 600px;
   }
-  .map__box__button:hover {
-    background-color: #fff;
-  }
 }
 @media (min-width: 992px) {
   .burger-btn {
