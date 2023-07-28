@@ -365,11 +365,31 @@ body {
 
 .menu {
 	&__box {
-		&--text {
-			display: flex;
-			justify-content: center;
+		&--icons {
+			height: 60px;
+			display: block;
+			margin: auto;
+		}
+
+		&--tittle {
+			text-align: justify;
 			text-align: center;
-			align-items: flex-start;
+			margin: 2em 0 0.5em 0;
+		}
+
+		&--text {
+			line-height: 1.5em;
+			text-align: justify;
+			text-align: center;
+			padding: 1em 0 0.5 0;
+		}
+		&--animation {
+			text-align: justify;
+			text-align: center;
+			margin: 20px 0 0 30px;
+			color: green;
+			font-size: 4rem;
+			animation: phoneAnimation 1s linear infinite both;
 		}
 	}
 
