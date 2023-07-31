@@ -315,16 +315,16 @@ body {
   padding: 20px 0 0 0;
 }
 .info__box--tittle {
-  text-align: justify;
+  justify-content: center;
   text-align: center;
   margin: 1em 0 0.5em 0;
 }
 .info__box--text {
-  text-align: justify;
+  justify-content: center;
   text-align: center;
 }
 .info__box--animation {
-  text-align: justify;
+  justify-content: center;
   text-align: center;
   margin: 20px 0 0 30px;
   color: green;
@@ -332,26 +332,39 @@ body {
   animation: phoneAnimation 1s linear infinite both;
 }
 
+.plan--disable {
+  display: none;
+}
 .plan__box--text {
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: flex-start;
 }
-.plan--disable {
-  display: none;
-}
 
-.menu__box--text {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: flex-start;
-}
 .menu--disable {
   display: none;
 }
+.menu__box--icons {
+  height: 60px;
+  display: block;
+  margin: auto;
+}
+.menu__box--tittle {
+  justify-content: center;
+  text-align: center;
+  margin: 2em 0 0.5em 0;
+}
+.menu__box--text {
+  line-height: 1.5em;
+  justify-content: center;
+  text-align: center;
+  padding: 1em 0 0 0;
+}
 
+.photos--disable {
+  display: none;
+}
 .photos__box--text {
   display: flex;
   justify-content: center;
@@ -379,9 +392,6 @@ body {
 .photos__button:hover {
   background-color: rgba(230, 138, 227, 0.7);
   transition: 0.3s;
-}
-.photos--disable {
-  display: none;
 }
 
 .map--disable {

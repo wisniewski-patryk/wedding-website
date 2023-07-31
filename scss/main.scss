@@ -324,17 +324,17 @@ body {
 		}
 
 		&--tittle {
-			text-align: justify;
+			justify-content: center;
 			text-align: center;
 			margin: 1em 0 0.5em 0;
 		}
 
 		&--text {
-			text-align: justify;
+			justify-content: center;
 			text-align: center;
 		}
 		&--animation {
-			text-align: justify;
+			justify-content: center;
 			text-align: center;
 			margin: 20px 0 0 30px;
 			color: green;
@@ -347,6 +347,10 @@ body {
 ////// PLAN ////////
 
 .plan {
+	&--disable {
+		display: none;
+	}
+
 	&__box {
 		&--text {
 			display: flex;
@@ -354,33 +358,45 @@ body {
 			text-align: center;
 			align-items: flex-start;
 		}
-	}
-
-	&--disable {
-		display: none;
 	}
 }
 
 ////// MENU ////////
 
 .menu {
-	&__box {
-		&--text {
-			display: flex;
-			justify-content: center;
-			text-align: center;
-			align-items: flex-start;
-		}
-	}
-
 	&--disable {
 		display: none;
+	}
+
+	&__box {
+		&--icons {
+			height: 60px;
+			display: block;
+			margin: auto;
+		}
+
+		&--tittle {
+			justify-content: center;
+			text-align: center;
+			margin: 2em 0 0.5em 0;
+		}
+
+		&--text {
+			line-height: 1.5em;
+			justify-content: center;
+			text-align: center;
+			padding: 1em 0 0 0;
+		}
 	}
 }
 
 ////// ZDJĘCIA ////////
 
 .photos {
+	&--disable {
+		display: none;
+	}
+
 	&__box {
 		&--text {
 			display: flex;
@@ -410,10 +426,6 @@ body {
 			background-color: rgba(230, 138, 227, 0.7);
 			transition: 0.3s;
 		}
-	}
-
-	&--disable {
-		display: none;
 	}
 }
 
