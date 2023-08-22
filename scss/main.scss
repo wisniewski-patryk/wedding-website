@@ -204,6 +204,12 @@ body {
 			}
 		}
 	}
+	&__date {
+		position: absolute;
+		top: 40%;
+		font-family: 'Petit Formal Script', cursive;
+		font-size: 2rem;
+	}
 }
 
 .section {
@@ -333,8 +339,8 @@ body {
 			justify-content: center;
 			text-align: center;
 		}
-		&--animation {
-			justify-content: center;
+		&--animation {			
+			text-align: justify;
 			text-align: center;
 			margin: 20px 0 0 30px;
 			color: green;
@@ -472,34 +478,7 @@ li {
 	&:hover::before {
 		transform: scale(0);
 	}
-}
-
-.button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: auto;
-	margin-top: 50px;
-	padding: 10px 20px;
-	background-color: #eee;
-	border: 2px solid #94555c;
-	border-radius: 4px;
-	font-size: 16px;
-	cursor: pointer;
-	&--link {
-		font-weight: bold;
-		color: #94555c;
-		text-transform: uppercase;
-		text-decoration: none;
-	}
-	&:hover {
-		background-color: #94555c;
-		transition: 0.5s;
-		.button--link {
-			color: #eee;
-			transition: 0.5s;
-		}
-	}
+	
 }
 
 ////// MEDIA /////
@@ -600,6 +579,9 @@ li {
 				}
 			}
 		}
+		&__date {
+			font-size: 2.5rem;
+		}
 	}
 
 	.counter {
@@ -691,6 +673,9 @@ li {
 				}
 			}
 		}
+		&__date {
+			font-size: 3rem;
+		}
 	}
 }
 
@@ -746,6 +731,9 @@ li {
 					}
 				}
 			}
+		}
+		&__date {
+			font-size: 3.5rem;
 		}
 	}
 }
