@@ -287,7 +287,7 @@ body {
 
 	&__box {
 		&--icons {
-			height: 40px;
+			height: 35px;
 			display: inline;
 
 			&:hover {
@@ -298,6 +298,7 @@ body {
 
 		&--tittle {
 			display: flex;
+			font-size: large;
 			align-items: center;
 			justify-content: center;
 			text-align: center;
@@ -329,16 +330,16 @@ body {
 		}
 
 		&--tittle {
-			text-align: justify;
+			justify-content: center;
 			text-align: center;
 			margin: 1em 0 0.5em 0;
 		}
 
 		&--text {
-			text-align: justify;
+			justify-content: center;
 			text-align: center;
 		}
-		&--animation {
+		&--animation {			
 			text-align: justify;
 			text-align: center;
 			margin: 20px 0 0 30px;
@@ -352,6 +353,10 @@ body {
 ////// PLAN ////////
 
 .plan {
+	&--disable {
+		display: none;
+	}
+
 	&__box {
 		&--text {
 			display: flex;
@@ -359,33 +364,45 @@ body {
 			text-align: center;
 			align-items: flex-start;
 		}
-	}
-
-	&--disable {
-		display: none;
 	}
 }
 
 ////// MENU ////////
 
 .menu {
-	&__box {
-		&--text {
-			display: flex;
-			justify-content: center;
-			text-align: center;
-			align-items: flex-start;
-		}
-	}
-
 	&--disable {
 		display: none;
+	}
+
+	&__box {
+		&--icons {
+			height: 60px;
+			display: block;
+			margin: auto;
+		}
+
+		&--tittle {
+			justify-content: center;
+			text-align: center;
+			margin: 2em 0 0.5em 0;
+		}
+
+		&--text {
+			line-height: 1.5em;
+			justify-content: center;
+			text-align: center;
+			padding: 1em 0 0 0;
+		}
 	}
 }
 
 ////// ZDJĘCIA ////////
 
 .photos {
+	&--disable {
+		display: none;
+	}
+
 	&__box {
 		&--text {
 			display: flex;
@@ -394,9 +411,27 @@ body {
 			align-items: flex-start;
 		}
 	}
-
-	&--disable {
-		display: none;
+	&__button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+		margin-top: 50px;
+		padding: 10px 20px;
+		background-color: #e68ae3;
+		border-radius: 4px;
+		font-size: 16px;
+		cursor: pointer;
+		&--link {
+			font-weight: bold;
+			color: #602b31;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+		&:hover {
+			background-color: rgba(230, 138, 227, 0.7);
+			transition: 0.3s;
+		}
 	}
 }
 
@@ -416,14 +451,6 @@ body {
 			border: 0;
 			width: 100%;
 			height: 450px;
-		}
-
-		&--link {
-			display: flex;
-			justify-content: center;
-			text-align: center;
-			align-items: flex-start;
-			margin-top: 50px;
 		}
 	}
 }
@@ -451,6 +478,7 @@ li {
 	&:hover::before {
 		transform: scale(0);
 	}
+	
 }
 
 ////// MEDIA /////
