@@ -42,7 +42,6 @@ body {
 	}
 
 	&:hover {
-
 		.burger-btn__bars::after,
 		.burger-btn__bars::before {
 			width: 100%;
@@ -205,6 +204,12 @@ body {
 			}
 		}
 	}
+	&__date {
+		position: absolute;
+		top: 85%;
+		font-family: 'Petit Formal Script', cursive;
+		font-size: 2rem;
+	}
 }
 
 .section {
@@ -228,7 +233,7 @@ body {
 		transform: rotate(0deg);
 	}
 	10% {
-		scale: 1,1;
+		scale: 1, 1;
 		transform: rotate(10deg);
 	}
 	20% {
@@ -240,7 +245,7 @@ body {
 		transform: rotate(10deg);
 	}
 	40% {
-		scale: 1,4;
+		scale: 1, 4;
 		transform: rotate(-10deg);
 	}
 	50% {
@@ -331,17 +336,16 @@ body {
 
 		&--text {
 			text-align: justify;
-  			text-align: center;
+			text-align: center;
 		}
-		&--animation {			
+		&--animation {
 			text-align: justify;
 			text-align: center;
-			margin:  20px 0 0 30px;
+			margin: 20px 0 0 30px;
 			color: green;
 			font-size: 4rem;
 			animation: phoneAnimation 1s linear infinite both;
 		}
-
 	}
 }
 
@@ -434,20 +438,19 @@ li {
 
 .active-section {
 	color: #dc6327;
-		&::before {
-			transform: scale(0);
-			border: 3px solid #dc6327;
-			border-radius: 8px;
-			content: '';
-			transition: transform 0.3s;
-			background-color: grey;
-			opacity: 0.2;
-		}
+	&::before {
+		transform: scale(0);
+		border: 3px solid #dc6327;
+		border-radius: 8px;
+		content: '';
+		transition: transform 0.3s;
+		background-color: grey;
+		opacity: 0.2;
+	}
 
 	&:hover::before {
 		transform: scale(0);
 	}
-	
 }
 
 ////// MEDIA /////
@@ -548,6 +551,9 @@ li {
 				}
 			}
 		}
+		&__date {
+			font-size: 2.5rem;
+		}
 	}
 
 	.counter {
@@ -639,6 +645,9 @@ li {
 				}
 			}
 		}
+		&__date {
+			font-size: 3rem;
+		}
 	}
 }
 
@@ -694,6 +703,9 @@ li {
 					}
 				}
 			}
+		}
+		&__date {
+			font-size: 3.5rem;
 		}
 	}
 }
