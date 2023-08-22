@@ -217,7 +217,7 @@ body {
 }
 .header__date {
   position: absolute;
-  top: 85%;
+  top: 40%;
   font-family: "Petit Formal Script", cursive;
   font-size: 2rem;
 }
