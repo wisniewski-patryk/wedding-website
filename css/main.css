@@ -171,6 +171,12 @@ body {
   font-size: 3rem;
   font-weight: 300;
 }
+.header__date {
+  position: absolute;
+  top: 30%;
+  font-family: "Petit Formal Script", cursive;
+  font-size: 2rem;
+}
 .header__timer {
   margin-top: 300px;
 }
@@ -214,12 +220,6 @@ body {
 }
 .header__timer .time__section__cards .card__title {
   font-size: 2.5rem;
-}
-.header__date {
-  position: absolute;
-  top: 40%;
-  font-family: "Petit Formal Script", cursive;
-  font-size: 2rem;
 }
 
 .section {
@@ -330,7 +330,7 @@ body {
   text-align: center;
 }
 .info__box--animation {
-  justify-content: center;
+  text-align: justify;
   text-align: center;
   margin: 20px 0 0 30px;
   color: green;
@@ -436,34 +436,6 @@ li {
 }
 .active-section:hover::before {
   transform: scale(0);
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  margin-top: 50px;
-  padding: 10px 20px;
-  background-color: #eee;
-  border: 2px solid #94555c;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-}
-.button--link {
-  font-weight: bold;
-  color: #94555c;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-.button:hover {
-  background-color: #94555c;
-  transition: 0.5s;
-}
-.button:hover .button--link {
-  color: #eee;
-  transition: 0.5s;
 }
 
 @media (min-width: 576px) {

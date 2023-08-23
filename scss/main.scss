@@ -152,6 +152,12 @@ body {
 		font-size: 3rem;
 		font-weight: 300;
 	}
+	&__date {
+		position: absolute;
+		top: 30%;
+		font-family: 'Petit Formal Script', cursive;
+		font-size: 2rem;
+	}
 
 	&__timer {
 		margin-top: 300px;
@@ -203,12 +209,6 @@ body {
 				}
 			}
 		}
-	}
-	&__date {
-		position: absolute;
-		top: 40%;
-		font-family: 'Petit Formal Script', cursive;
-		font-size: 2rem;
 	}
 }
 
