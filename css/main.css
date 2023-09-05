@@ -346,6 +346,7 @@ body {
   justify-content: center;
   text-align: center;
   align-items: flex-start;
+  margin: 20px 0 0 30px;
 }
 
 .menu--disable {
