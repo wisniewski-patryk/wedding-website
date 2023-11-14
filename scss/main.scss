@@ -127,7 +127,7 @@ body {
 // HEADER
 
 .header {
-	@include heroImages('../img/oip-alinalukaszewskafotografia-25-tinypng.png');
+	@include heroImages('../img/reportaz-slubny-637-tlo-1280x1900.jpg');
 
 	&--disable {
 		display: none;
@@ -141,16 +141,17 @@ body {
 	padding: 2em;
 	height: 100vh;
 	text-align: center;
-	color: #f6f8f7;
+	color: $pure-white;
 	background-attachment: scroll;
+	
 
 	&__heading {
 		position: absolute;
-		top: 15%;
+		top: 40%;
 		color: $pure-white;
 		font-family: 'Dancing Script', cursive;
-		font-size: 3rem;
-		font-weight: 300;
+		font-size: 5rem;
+		font-weight: 700;
 	}
 	&__date {
 		position: absolute;
@@ -472,18 +473,18 @@ li {
 	margin-top: 50px;
 	padding: 10px 20px;
 	background-color: #eee;
-	border: 2px solid #94555c;
+	border: 2px solid $pure-white;
 	border-radius: 4px;
 	font-size: 16px;
 	cursor: pointer;
 	&--link {
 		font-weight: bold;
-		color: #94555c;
+		color: $pure-white;
 		text-transform: uppercase;
 		text-decoration: none;
 	}
 	&:hover {
-		background-color: #94555c;
+		background-color: $pure-white;
 		transition: 0.5s;
 		.button--link {
 			color: #eee;
@@ -711,7 +712,7 @@ li {
 		padding: 2em;
 		height: 100vh;
 		text-align: center;
-		color: #f6f8f7;
+		color: $pure-white;
 		background-attachment: scroll;
 
 		&__heading {
