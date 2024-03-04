@@ -8,7 +8,7 @@
   position: relative;
   font-family: "Petit Formal Script", cursive;
   margin-bottom: 2em;
-  color: #99535b;
+  color: rgb(230, 28, 102);
   font-size: 3rem;
   font-weight: 300;
   text-align: center;
@@ -83,7 +83,7 @@ body {
   right: 0;
   height: 3px;
   content: "";
-  background-color: #99535b;
+  background-color: rgb(230, 28, 102);
   transition: width 0.3s;
 }
 .burger-btn__bars {
@@ -124,7 +124,7 @@ body {
   margin: 0.5em 0;
   padding: 0.5em 2em;
   font-size: 2.8rem;
-  color: #99535b;
+  color: rgb(230, 28, 102);
   text-decoration: none;
 }
 .nav__item::before {
@@ -134,7 +134,7 @@ body {
   width: 100%;
   height: 100%;
   transform: scale(0);
-  border: 3px solid #99535b;
+  border: 3px solid rgb(230, 28, 102);
   border-radius: 8px;
   content: "";
   transition: transform 0.3s;
@@ -144,10 +144,11 @@ body {
 }
 
 .header {
-  background-image: url("../img/oip-alinalukaszewskafotografia-25-tinypng.png");
+  background-image: url("../img/reportaz-slubny-637-tlo-1280x1900.jpg");
   background-size: cover;
   background-position: center;
   background-position-x: 70%;
+  background-position-y: 0%;
   background-attachment: fixed;
   position: relative;
   display: flex;
@@ -157,7 +158,7 @@ body {
   padding: 2em;
   height: 100vh;
   text-align: center;
-  color: #f6f8f7;
+  color: rgb(230, 28, 102);
   background-attachment: scroll;
 }
 .header--disable {
@@ -165,11 +166,11 @@ body {
 }
 .header__heading {
   position: absolute;
-  top: 15%;
-  color: #99535b;
+  top: 40%;
+  color: rgb(230, 28, 102);
   font-family: "Dancing Script", cursive;
-  font-size: 3rem;
-  font-weight: 300;
+  font-size: 5rem;
+  font-weight: 700;
 }
 .header__date {
   position: absolute;
@@ -430,19 +431,19 @@ li {
   margin-top: 50px;
   padding: 10px 20px;
   background-color: #eee;
-  border: 2px solid #94555c;
+  border: 2px solid rgb(230, 28, 102);
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
 }
 .button--link {
   font-weight: bold;
-  color: #94555c;
+  color: rgb(230, 28, 102);
   text-transform: uppercase;
   text-decoration: none;
 }
 .button:hover {
-  background-color: #94555c;
+  background-color: rgb(230, 28, 102);
   transition: 0.5s;
 }
 .button:hover .button--link {
@@ -578,7 +579,7 @@ li {
     padding: 2em;
     height: 100vh;
     text-align: center;
-    color: #f6f8f7;
+    color: rgb(230, 28, 102);
     background-attachment: scroll;
   }
   .header--disable {
